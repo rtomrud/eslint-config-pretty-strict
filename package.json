@@ -1,0 +1,56 @@
+{
+  "name": "eslint-config-pretty-strict",
+  "version": "0.1.0",
+  "description": "Strict ESLint config with Prettier as a code formatter",
+  "homepage": "https://github.com/rtomrud/eslint-config-pretty-strict#readme",
+  "bugs": {
+    "url": "https://github.com/rtomrud/eslint-config-pretty-strict/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rtomrud/eslint-config-pretty-strict"
+  },
+  "author": "Artem Rudenko <rtomrud@gmail.com>",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^4.12.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-filenames": "^1.2.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "faucet": "0.0.1",
+    "prettier": "^1.8.2",
+    "tape": "^4.8.0"
+  },
+  "peerDependencies": {
+    "eslint": "^4.12.1",
+    "prettier": "^1.8.2",
+    "eslint-plugin-prettier": "^2.3.1"
+  },
+  "scripts": {
+    "check-eslint-prettier":
+      "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "lint": "eslint .",
+    "test": "tape {**,.}/*.test.js | faucet",
+    "check": "npm run check-eslint-prettier && npm run lint && npm test"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": ["./index.js"],
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "env": {
+      "node": true
+    },
+    "plugins": ["filenames"],
+    "rules": {
+      "filenames/match-regex": [
+        "error",
+        "^[a-z]+(-[0-9]+)?(-[a-z]+(-[0-9]+)?)*(\\.test)?$",
+        false
+      ],
+      "filenames/match-exported": ["error", "kebab"]
+    }
+  }
+}
