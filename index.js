@@ -115,7 +115,7 @@ module.exports = {
     "no-magic-numbers": [
       "error",
       {
-        ignore: [0, 1, 2],
+        ignore: [-1, 0, 1, 2],
         ignoreArrayIndexes: false,
         enforceConst: true,
         detectObjects: false
