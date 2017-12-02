@@ -5,7 +5,7 @@ as a code formatter
 
 ## Motivation
 
-Code style must be _consistent_. Code should be unsurprising. The readers need
+Code style must be consistent. Code should be unsurprising. The readers need
 to be able to trust that the structures and patterns they have seen in one
 source file will mean the same thing in others. Because a code base with an
 inconsistent style taxes the reader with additional cognitive load.
@@ -197,7 +197,7 @@ const foo = foo ? foo : bar;
 
 ### 3. Do One Thing
 
-Do it only. Per line of code. What's _one thing_? Every statement, expression,
+Do it only. Per line of code. What's _One Thing_? Every statement, expression,
 clause, declaration or chained call should go on its own line. It speeds-up
 reading, scanning and refactoring. It makes typos stand out. And it makes diffs
 clearer.
@@ -232,7 +232,7 @@ let foo = (bar = baz = 0);
 
 ### 4. Automate Formatting
 
-Use [prettier](https://prettier.io/) to format the code in a consistent,
+Use [Prettier](https://prettier.io/) to format the code in a consistent,
 legible, and mostly standard and unastonishing way. This frees you from the
 burden of remembering formatting rules and applying them by hand.
 
