@@ -196,7 +196,6 @@ module.exports = {
     "func-names": ["error", "as-needed"],
     "func-style": ["error", "expression", { allowArrowFunctions: true }],
     "id-length": ["warn", { min: 1, max: idLength, properties: "never" }],
-    "linebreak-style": ["error", "unix"],
     "lines-around-comment": [
       "error",
       {
