@@ -5,7 +5,7 @@ as a code formatter
 
 ## Motivation
 
-Code style must be _consistent_. Code should be unsurprising. The readers need
+Code style must be consistent. Code should be unsurprising. The readers need
 to be able to trust that the structures and patterns they have seen in one
 source file will mean the same thing in others. Because a code base with an
 inconsistent style taxes the reader with additional cognitive load.
@@ -41,7 +41,7 @@ npm install --save-dev eslint prettier eslint-plugin-prettier github:rtomrud/esl
 
 ## Using
 
-Create an `"eslintConfig"` property in your `package.json` file and extend the
+Add an `"eslintConfig"` property in your `package.json` file and extend the
 [eslint-config-pretty-strict](./index.js):
 
 ```json
@@ -79,11 +79,9 @@ of choice, to see and fix the style problems directly in your text editor.
 
 ### Specifying environment
 
-If your code is for NodeJS, specify that in the `"env"` object of your
-`.eslintrc.json` to turn on the
+If your code is for Node, specify that in the `"eslintConfig"` property of your `package.json` to use the
 [NodeJS and CommonJS rules](https://eslint.org/docs/rules/#nodejs-and-commonjs):
 
-> `.package.json`
 
 ```json
 {
@@ -109,9 +107,9 @@ and specify
 [environments](https://eslint.org/docs/user-guide/configuring#specifying-environments),
 or [rules](https://eslint.org/docs/user-guide/configuring#configuring-rules).
 
-You may also want to
+You may want to
 [disable a rule with in-line comments](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments)
-when there is a legitimate use case for code that is causing linting errors.
+when there is a legitimate use case for code causing linting errors.
 
 ## Principles
 
@@ -199,7 +197,7 @@ const foo = foo ? foo : bar;
 
 ### 3. Do One Thing
 
-Do it only. Per line of code. What's _one thing_? Every statement, expression,
+Do it only. Per line of code. What's _One Thing_? Every statement, expression,
 clause, declaration or chained call should go on its own line. It speeds-up
 reading, scanning and refactoring. It makes typos stand out. And it makes diffs
 clearer.
@@ -234,7 +232,7 @@ let foo = (bar = baz = 0);
 
 ### 4. Automate Formatting
 
-Use [prettier](https://prettier.io/) to format the code in a consistent,
+Use [Prettier](https://prettier.io/) to format the code in a consistent,
 legible, and mostly standard and unastonishing way. This frees you from the
 burden of remembering formatting rules and applying them by hand.
 
