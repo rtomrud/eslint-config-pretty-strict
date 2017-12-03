@@ -292,24 +292,28 @@ module.exports = {
     "no-restricted-syntax": [
       "error",
       {
-        selector: "UnaryExpression[operator=void]",
-        message: "Don't use void. Use `undefined` instead."
-      },
-      {
-        selector: "WithStatement",
-        message: "Don't use `with`. Use variables instead."
-      },
-      {
-        selector: "SequenceExpression",
-        message: "Don't use the `,` operator. Use `{ }` instead."
-      },
-      {
         selector: "ForInStatement",
         message: "Don't use `for in`. Use higher-order functions instead."
       },
       {
         selector: "ForOfStatement",
         message: "Don't use `for of`. Use higher-order functions instead."
+      },
+      {
+        selector: "WithStatement",
+        message: "Don't use `with`. Use variables instead."
+      },
+      {
+        selector: "LabeledStatement",
+        message: "Labels make code confusing and hard to maintain, like GOTO."
+      },
+      {
+        selector: "SequenceExpression",
+        message: "Don't use the `,` operator. Use `{ }` instead."
+      },
+      {
+        selector: "UnaryExpression[operator=void]",
+        message: "Don't use void. Use `undefined` instead."
       }
     ],
     "no-tabs": useTabs ? "off" : "error",
