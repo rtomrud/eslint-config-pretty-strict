@@ -304,10 +304,6 @@ module.exports = {
         message: "Don't use the `,` operator. Use `{ }` instead."
       },
       {
-        selector: "ForStatement",
-        message: "Don't use `for`. Use higher-order functions or while instead."
-      },
-      {
         selector: "ForInStatement",
         message: "Don't use `for in`. Use higher-order functions instead."
       },
