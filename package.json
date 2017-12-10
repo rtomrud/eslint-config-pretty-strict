@@ -14,7 +14,7 @@
   "author": "Artem Rudenko <rtomrud@gmail.com>",
   "main": "index.js",
   "devDependencies": {
-    "eslint": "^4.12.1",
+    "eslint": "^4.13.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-prettier": "^2.3.1",
@@ -23,33 +23,39 @@
     "tape": "^4.8.0"
   },
   "peerDependencies": {
-    "eslint": "^4.12.1",
+    "eslint": "^4.13.0",
     "prettier": "^1.8.2",
     "eslint-plugin-prettier": "^2.3.1"
   },
   "scripts": {
-    "check-eslint-prettier":
-      "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "check-eslint-prettier": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "lint": "eslint .",
     "test": "npm run lint && tape {**,.}/*.test.js | faucet"
   },
   "eslintConfig": {
     "root": true,
-    "extends": ["./index.js"],
+    "extends": [
+      "./index.js"
+    ],
     "parserOptions": {
       "ecmaVersion": 6
     },
     "env": {
       "node": true
     },
-    "plugins": ["filenames"],
+    "plugins": [
+      "filenames"
+    ],
     "rules": {
       "filenames/match-regex": [
         "error",
         "^[a-z]+(-[0-9]+)?(-[a-z]+(-[0-9]+)?)*(\\.test)?$",
         false
       ],
-      "filenames/match-exported": ["error", "kebab"]
+      "filenames/match-exported": [
+        "error",
+        "kebab"
+      ]
     }
   }
 }
