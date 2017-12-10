@@ -31,7 +31,12 @@
   "scripts": {
     "check-eslint-prettier": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "lint": "eslint .",
-    "test": "npm run lint && tape {**,.}/*.test.js | faucet"
+    "test": "tape {**,.}/*.test.js | faucet"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run check-eslint-prettier && npm run lint && npm test"
+    }
   },
   "eslintConfig": {
     "root": true,
