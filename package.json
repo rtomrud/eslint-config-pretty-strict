@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-pretty-strict",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Strict ESLint config with Prettier as a code formatter",
   "homepage": "https://github.com/rtomrud/eslint-config-pretty-strict#readme",
   "bugs": {
