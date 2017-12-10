@@ -82,7 +82,6 @@ of choice, to see and fix the style problems directly in your text editor.
 If your code is for Node, specify that in the `"eslintConfig"` property of your `package.json` to use the
 [NodeJS and CommonJS rules](https://eslint.org/docs/rules/#nodejs-and-commonjs):
 
-
 ```json
 {
   "eslintConfig": {
