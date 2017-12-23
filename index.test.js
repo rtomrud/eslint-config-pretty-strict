@@ -49,11 +49,3 @@ test("index.js no-tabs rule with eslint-plugin-prettier", ({ equal, end }) => {
   );
   end();
 });
-
-test("index.js lint", ({ equal, end }) => {
-  const cliEngine = new CLIEngine({ configFile: "./index.js", envs: ["node"] });
-  const { errorCount, warningCount } = cliEngine.executeOnFiles(["index.js"]);
-  equal(errorCount, 0, "should have no errors");
-  equal(warningCount, 0, "should have no warnings");
-  end();
-});
