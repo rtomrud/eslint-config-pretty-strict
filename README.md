@@ -36,7 +36,8 @@ Install [eslint](https://github.com/eslint/eslint),
 [eslint-config-pretty-strict](./README.md):
 
 ```bash
-npm install --save-dev eslint prettier eslint-plugin-prettier github:rtomrud/eslint-config-pretty-strict
+npm install --save-dev eslint eslint-plugin-prettier github:rtomrud/eslint-config-pretty-strict
+npm install --save-dev --save-exact prettier
 ```
 
 ## Using
