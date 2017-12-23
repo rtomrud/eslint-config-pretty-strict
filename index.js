@@ -13,7 +13,7 @@ const maxDepth = 2;
 const maxLines = 512;
 const maxNestedCallbacks = 2;
 const maxParams = 4;
-const maxStatements = 8;
+const maxStatements = 16;
 
 module.exports = {
   plugins: ["prettier"],
