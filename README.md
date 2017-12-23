@@ -20,10 +20,9 @@ the trouble. Because you shouldn't have to waste time thinking about code style,
 the rules should require neither judgment calls nor memorizing.
 
 This config provides strictly configured
-[ESLint](https://eslint.org/docs/about/) rules to
-[prevent errors](#1-ban-error-prone-code) and enforce [best](#2-do-one-thing)
-[practices](#3-do-one-thing). It also
-[automates code formatting](#4-automatic-formatting) through
+[ESLint](https://eslint.org/docs/about/) rules to [prevent errors](#1-ban-error-prone-code)
+and enforce [best](#2-dont-repeat-yourself) [practices](#3-do-one-thing). It
+also [automates code formatting](#4-automate-formatting) through
 [Prettier](https://prettier.io/docs/en/index.html) and
 [automatically fixable ESLint rules](https://eslint.org/docs/user-guide/command-line-interface#--fix)
 to ensure a consistent style.
@@ -131,24 +130,24 @@ if (foo) {
 
 // ✗ bad
 if ((foo = bar)) {
-  // Was it meant as an assignment or as equality test?
+  // Was it meant as an assignment or as an equality test?
 }
 ```
 
 ```js
 // ✓ ok
 if (foo === 0) {
-  // Should be true only if foo is 0
+  // Should be true only if `foo` is 0
 }
 
 // ✓ ok
 if (Number(foo) === 0) {
-  // Should be true if foo is 0 or "0"
+  // Should be true if `foo` is 0 or "0"
 }
 
 // ✗ bad
 if (foo == 0) {
-  // Was it meant to be type coerced?
+  // Was `foo` meant to be type coerced?
 }
 ```
 
