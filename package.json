@@ -14,7 +14,7 @@
   "author": "Artem Rudenko <rtomrud@gmail.com>",
   "main": "index.js",
   "devDependencies": {
-    "eslint": "^4.13.0",
+    "eslint": "^4.13.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-prettier": "^2.3.1",
@@ -24,7 +24,7 @@
     "tape": "^4.8.0"
   },
   "peerDependencies": {
-    "eslint": "^4.13.0",
+    "eslint": "^4.13.1",
     "prettier": "^1.9.1",
     "eslint-plugin-prettier": "^2.3.1"
   },
