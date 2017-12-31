@@ -22,7 +22,7 @@ module.exports = {
   rules: {
     "prettier/prettier": ["error", { printWidth, tabWidth, useTabs }],
     "for-direction": "error",
-    "getter-return": ["error", { allowImplicit: false }],
+    "getter-return": ["error", { allowImplicit: true }],
     "no-await-in-loop": "error",
     "no-compare-neg-zero": "error",
     "no-cond-assign": ["error", "always"],
