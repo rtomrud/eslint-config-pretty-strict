@@ -280,7 +280,7 @@ module.exports = {
     "no-negated-condition": "error",
     "no-nested-ternary": "error",
     "no-new-object": "error",
-    "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
+    "no-plusplus": "error",
     "no-restricted-syntax": [
       "error",
       {
