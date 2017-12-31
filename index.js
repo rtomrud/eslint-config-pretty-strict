@@ -74,7 +74,7 @@ module.exports = {
     ],
     "valid-typeof": ["error", { requireStringLiterals: true }],
     "accessor-pairs": ["error", { setWithoutGet: true, getWithoutSet: false }],
-    "array-callback-return": "error",
+    "array-callback-return": ["error", { allowImplicit: false }],
     "block-scoped-var": "error",
     "class-methods-use-this": "error",
     complexity: ["warn", { max: complexity }],
