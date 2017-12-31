@@ -30,12 +30,12 @@
   },
   "scripts": {
     "check-eslint-prettier": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
-    "lint": "eslint .",
-    "test": "tape index.test.js | faucet"
+    "test": "tape index.test.js | faucet",
+    "posttest": "eslint ."
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run check-eslint-prettier && npm run lint && npm test"
+      "pre-commit": "npm run check-eslint-prettier && npm test"
     }
   },
   "eslintConfig": {
