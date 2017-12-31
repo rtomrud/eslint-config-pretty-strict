@@ -53,20 +53,6 @@ You can automatically fix some of the detected problems by [running ESLint with 
 
 Note that you can install an [ESLint plugin](https://eslint.org/docs/user-guide/integrations#editors) and a [Prettier plugin](https://prettier.io/docs/en/editors.html) for your text editor of choice, to see and fix the style problems directly in your text editor.
 
-### Specifying environment
-
-If your code is for Node, specify that in the `"eslintConfig"` property of your `package.json` to use the [NodeJS and CommonJS rules](https://eslint.org/docs/rules/#nodejs-and-commonjs):
-
-```json
-{
-  "eslintConfig": {
-    "env": {
-      "node": true
-    }
-  }
-}
-```
-
 ### Configuring ESLint with your own rules
 
 ESLint allows [granularly configuring](https://eslint.org/docs/user-guide/configuring) any setting.

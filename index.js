@@ -179,14 +179,6 @@ module.exports = {
       "error",
       { functions: true, classes: true, variables: true }
     ],
-    "callback-return": "error",
-    "global-require": "error",
-    "handle-callback-err": "error",
-    "no-buffer-constructor": "error",
-    "no-new-require": "error",
-    "no-path-concat": "error",
-    "no-process-env": "error",
-    "no-sync": ["error", { allowAtRootLevel: true }],
     camelcase: ["error", { properties: "never" }],
     "func-name-matching": [
       "error",
@@ -333,14 +325,12 @@ module.exports = {
       { blankLine: "always", prev: ["*"], next: ["class", "function"] },
       {
         blankLine: "always",
-        prev: ["directive", "import", "export", "cjs-import", "cjs-export"],
+        prev: ["directive", "import", "export"],
         next: ["*"]
       },
       { blankLine: "any", prev: ["directive"], next: ["directive"] },
       { blankLine: "any", prev: ["import"], next: ["import"] },
-      { blankLine: "any", prev: ["export"], next: ["export"] },
-      { blankLine: "any", prev: ["cjs-import"], next: ["cjs-import"] },
-      { blankLine: "any", prev: ["cjs-export"], next: ["cjs-export"] }
+      { blankLine: "any", prev: ["export"], next: ["export"] }
     ],
     "spaced-comment": ["error", "always"],
     "arrow-body-style": [
