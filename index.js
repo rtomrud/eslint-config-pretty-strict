@@ -55,13 +55,6 @@ module.exports = {
     "no-unsafe-finally": "error",
     "no-unsafe-negation": "error",
     "use-isnan": "error",
-    "valid-jsdoc": [
-      "error",
-      {
-        requireParamDescription: false,
-        requireReturnDescription: false
-      }
-    ],
     "valid-typeof": ["error", { requireStringLiterals: true }],
     "accessor-pairs": "error",
     "array-callback-return": "error",
