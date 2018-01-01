@@ -160,20 +160,10 @@ module.exports = {
 
         // MUST be `true` to work with Prettier
         allowBlockStart: true,
-
-        // MUST be `true` to work with Prettier
         allowBlockEnd: true,
-
-        // MUST be `true` to work with Prettier
         allowObjectStart: true,
-
-        // MUST be `true` to work with Prettier
         allowObjectEnd: true,
-
-        // MUST be `true` to work with Prettier
         allowArrayStart: true,
-
-        // MUST be `true` to work with Prettier
         allowArrayEnd: true,
 
         applyDefaultIgnorePatterns: false
