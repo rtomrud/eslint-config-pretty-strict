@@ -51,7 +51,7 @@ module.exports = {
     "use-isnan": "error",
     "valid-typeof": ["error", { requireStringLiterals: true }],
     "accessor-pairs": "error",
-    "array-callback-return": "error",
+    "array-callback-return": ["error", { allowImplicit: true }],
     "block-scoped-var": "error",
     "class-methods-use-this": "error",
     complexity: ["warn", { max: complexity }],
