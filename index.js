@@ -26,12 +26,6 @@ module.exports = {
     "no-await-in-loop": "error",
     "no-compare-neg-zero": "error",
     "no-cond-assign": ["error", "always"],
-    "no-console": [
-      "error",
-      {
-        allow: ["error", "group", "groupCollapsed", "groupEnd", "info", "warn"]
-      }
-    ],
     "no-constant-condition": "error",
     "no-control-regex": "error",
     "no-debugger": "error",
