@@ -237,6 +237,14 @@ burden of remembering formatting rules and applying them by hand.
 
 > Formatting is a computer's job.—Kent Beck
 
+This config enables [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
+so that ESLint reports the errors detected by Prettier and lets you fix them
+with its `--fix` option. That way you don't have to worry about running both
+ESLint _and_ Prettier, you only have to run ESLint and it will handle both
+linting and formatting.
+
+The rules of this config are set up not to conflict with Prettier in any way.
+
 ## License
 
 [MIT](./LICENSE)
