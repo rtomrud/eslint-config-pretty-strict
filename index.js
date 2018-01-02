@@ -243,7 +243,7 @@ module.exports = {
       { blankLine: "any", prev: ["import"], next: ["import"] },
       { blankLine: "any", prev: ["export"], next: ["export"] }
     ],
-    "spaced-comment": "error",
+    "spaced-comment": ["error", "always", { block: { balanced: true } }],
     "arrow-body-style": "error",
     "constructor-super": "error",
     "no-class-assign": "error",
