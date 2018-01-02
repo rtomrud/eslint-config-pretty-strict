@@ -220,7 +220,7 @@ module.exports = {
       }
     ],
     "no-tabs": useTabs ? "off" : "error",
-    "no-underscore-dangle": ["error", { enforceInMethodNames: true }],
+    "no-underscore-dangle": "error",
     "no-unneeded-ternary": ["error", { defaultAssignment: false }],
     "one-var": ["error", "never"],
     "operator-assignment": "error",
