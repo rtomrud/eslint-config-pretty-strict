@@ -5,8 +5,10 @@ const printWidth = 80;
 const tabWidth = 2;
 const useTabs = false;
 
-// Arbitrary limits for rules that measure complexity and point at code smells
-// As these are subjective and can be hard to fix, they MUST be set to "warn"
+/*
+ * Arbitrary limits for rules that measure complexity and point at code smells
+ * As these are subjective and can be hard to fix, they MUST be set to "warn"
+ */
 const complexity = 8;
 const idLength = 32;
 const depth = 2;
@@ -164,7 +166,7 @@ module.exports = {
     "max-params": ["warn", params],
     "max-statements": ["warn", statements, { ignoreTopLevelFunctions: true }],
     "max-statements-per-line": "error",
-    "multiline-comment-style": ["error", "separate-lines"],
+    "multiline-comment-style": "error",
     "new-cap": ["error", { capIsNew: false }],
     "no-array-constructor": "error",
     "no-bitwise": "error",
