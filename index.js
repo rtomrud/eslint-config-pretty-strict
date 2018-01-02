@@ -123,10 +123,7 @@ module.exports = {
     "no-shadow-restricted-names": "error",
     "no-undef": "error",
     "no-undef-init": "error",
-    "no-unused-vars": [
-      "error",
-      { ignoreRestSiblings: true, caughtErrors: "all" }
-    ],
+    "no-unused-vars": ["error", { ignoreRestSiblings: true }],
     "no-use-before-define": "error",
     camelcase: ["error", { properties: "never" }],
     "func-name-matching": "error",
