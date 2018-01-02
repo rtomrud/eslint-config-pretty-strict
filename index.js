@@ -223,7 +223,7 @@ module.exports = {
       },
       {
         selector: "UnaryExpression[operator=void]",
-        message: "Don't use void. Use `undefined` instead."
+        message: "Don't use `void`. Use `return null;` or `return;` instead."
       }
     ],
     "no-tabs": useTabs ? "off" : "error",
