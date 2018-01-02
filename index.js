@@ -121,7 +121,7 @@ module.exports = {
     "no-delete-var": "error",
     "no-label-var": "error",
     "no-shadow-restricted-names": "error",
-    "no-undef": ["error", { typeof: true }],
+    "no-undef": "error",
     "no-undef-init": "error",
     "no-unused-vars": [
       "error",
