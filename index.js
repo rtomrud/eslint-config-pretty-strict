@@ -210,14 +210,6 @@ module.exports = {
         message: "Don't use `for of`. Use higher-order functions instead."
       },
       {
-        selector: "WithStatement",
-        message: "Don't use `with`. Use variables instead."
-      },
-      {
-        selector: "LabeledStatement",
-        message: "Labels make code confusing and hard to maintain, like GOTO."
-      },
-      {
         selector: "SequenceExpression",
         message: "Don't use the `,` operator. Use `{ }` instead."
       },
