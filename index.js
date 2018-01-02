@@ -125,11 +125,7 @@ module.exports = {
     "no-undef-init": "error",
     "no-unused-vars": [
       "error",
-      {
-        args: "all",
-        ignoreRestSiblings: true,
-        caughtErrors: "all"
-      }
+      { ignoreRestSiblings: true, caughtErrors: "all" }
     ],
     "no-use-before-define": "error",
     camelcase: ["error", { properties: "never" }],
