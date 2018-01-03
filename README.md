@@ -2,7 +2,7 @@
 
 Strict [ESLint](https://eslint.org) config with [Prettier](https://prettier.io/) as a code formatter
 
-_Note that this is  an experimental pre-v1.0.0 version, so it's not on npm yet and minor semver releases may introduce breaking changes_.
+_Note that this config is under initial development (< v1.0.0), so semver minor releases may introduce breaking changes_.
 
 ## Motivation
 
