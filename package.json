@@ -29,7 +29,7 @@
     "eslint-plugin-prettier": "^2.4.0"
   },
   "scripts": {
-    "pretest": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "pretest": "eslint --print-config index.js | eslint-config-prettier-check",
     "test": "tape index.test.js | faucet",
     "posttest": "eslint ."
   },
