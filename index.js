@@ -174,27 +174,6 @@ module.exports = {
     "no-continue": "error",
     "no-inline-comments": "error",
     "no-lonely-if": "error",
-    "no-mixed-operators": [
-      "error",
-      {
-        groups: [
-          ["%", "**"],
-          ["%", "+"],
-          ["%", "-"],
-          ["%", "*"],
-          ["%", "/"],
-          ["**", "+"],
-          ["**", "-"],
-          ["**", "*"],
-          ["**", "/"],
-          ["&", "|", "^", "~", "<<", ">>", ">>>"],
-          ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
-          ["&&", "||"],
-          ["in", "instanceof"]
-        ],
-        allowSamePrecedence: false
-      }
-    ],
     "no-multi-assign": "error",
     "no-negated-condition": "error",
     "no-nested-ternary": "error",
