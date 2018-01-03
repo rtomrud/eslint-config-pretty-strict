@@ -9,11 +9,11 @@ const useTabs = false;
 // As these are subjective and can be hard to fix, they MUST be set to "warn"
 const complexity = 8;
 const idLength = 32;
-const maxDepth = 2;
-const maxLines = 512;
-const maxNestedCallbacks = 2;
-const maxParams = 4;
-const maxStatements = 16;
+const depth = 2;
+const lines = 512;
+const nestedCallbacks = 2;
+const params = 4;
+const statements = 16;
 
 module.exports = {
   plugins: ["prettier"],
@@ -222,7 +222,7 @@ module.exports = {
       "always",
       { exceptAfterSingleLine: false }
     ],
-    "max-depth": ["warn", maxDepth],
+    "max-depth": ["warn", depth],
     "max-len": [
       "error",
       {
@@ -236,17 +236,10 @@ module.exports = {
         ignoreRegExpLiterals: true
       }
     ],
-    "max-lines": [
-      "warn",
-      { max: maxLines, skipBlankLines: false, skipComments: false }
-    ],
-    "max-nested-callbacks": ["warn", maxNestedCallbacks],
-    "max-params": ["warn", maxParams],
-    "max-statements": [
-      "warn",
-      maxStatements,
-      { ignoreTopLevelFunctions: true }
-    ],
+    "max-lines": ["warn", lines],
+    "max-nested-callbacks": ["warn", nestedCallbacks],
+    "max-params": ["warn", params],
+    "max-statements": ["warn", statements, { ignoreTopLevelFunctions: true }],
     "max-statements-per-line": ["error", { max: 1 }],
     "multiline-comment-style": ["error", "separate-lines"],
     "new-cap": ["error", { newIsCap: true, capIsNew: false, properties: true }],
