@@ -2,8 +2,6 @@
 
 A strict [ESLint](https://eslint.org) config with [Prettier](https://prettier.io/) as a code formatter
 
-_Note that this config is under initial development (< v1.0.0), so semver minor releases may introduce breaking changes_.
-
 ## Motivation
 
 Code style must be consistent. Code should be unsurprising. The readers need to be able to trust that the structures and patterns they have seen in one source file will mean the same thing in others. Because a code base with an inconsistent style taxes the reader with additional cognitive load.
@@ -22,6 +20,8 @@ Install [eslint](https://github.com/eslint/eslint), [prettier](https://github.co
 npm install --save-dev eslint eslint-plugin-prettier github:rtomrud/eslint-config-pretty-strict
 npm install --save-dev --save-exact prettier
 ```
+
+_Note that this config is under initial development (< v1.0.0), so semver minor releases may introduce breaking changes_.
 
 ## Using
 
