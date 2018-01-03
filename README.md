@@ -2,6 +2,8 @@
 
 Strict [ESLint](https://eslint.org) config with [Prettier](https://prettier.io/) as a code formatter
 
+_Note that this is  an experimental pre-v1.0.0 version, so it's not on npm yet and minor semver releases may introduce breaking changes_.
+
 ## Motivation
 
 Code style must be consistent. Code should be unsurprising. The readers need to be able to trust that the structures and patterns they have seen in one source file will mean the same thing in others. Because a code base with an inconsistent style taxes the reader with additional cognitive load.
