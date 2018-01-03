@@ -29,13 +29,13 @@
     "eslint-plugin-prettier": "^2.4.0"
   },
   "scripts": {
-    "check-eslint-prettier": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "pretest": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "test": "tape index.test.js | faucet",
     "posttest": "eslint ."
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run check-eslint-prettier && npm test"
+      "pre-commit": "npm test"
     }
   },
   "eslintConfig": {
