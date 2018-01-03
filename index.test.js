@@ -36,16 +36,3 @@ test("index.js max-len rule with eslint-plugin-prettier", ({ equal, end }) => {
   equal(tabWidthMaxLen, tabWidth, "should use Prettier's tabWidth");
   end();
 });
-
-test("index.js no-tabs rule with eslint-plugin-prettier", ({ equal, end }) => {
-  const {
-    "no-tabs": noTabs,
-    "prettier/prettier": [, { useTabs }]
-  } = index.rules;
-  equal(
-    useTabs ? noTabs === "off" : noTabs === "error",
-    true,
-    "should use tabs in neither or both ESLint and Prettier"
-  );
-  end();
-});

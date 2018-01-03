@@ -3,7 +3,6 @@
 // MUST be synchronized with Prettier (use their defaults)
 const printWidth = 80;
 const tabWidth = 2;
-const useTabs = false;
 
 /*
  * Arbitrary limits for rules that measure complexity and point at code smells
@@ -22,7 +21,7 @@ module.exports = {
 
   // MUST NOT use rules that conflict or are redundant with Prettier
   rules: {
-    "prettier/prettier": ["error", { printWidth, tabWidth, useTabs }],
+    "prettier/prettier": ["error", { printWidth, tabWidth }],
     "for-direction": "error",
     "getter-return": ["error", { allowImplicit: true }],
     "no-await-in-loop": "error",
@@ -198,7 +197,6 @@ module.exports = {
         message: "Don't use `void`. Use `return null;` or `return;` instead."
       }
     ],
-    "no-tabs": useTabs ? "off" : "error",
     "no-underscore-dangle": "error",
     "no-unneeded-ternary": ["error", { defaultAssignment: false }],
     "one-var": ["error", "never"],
