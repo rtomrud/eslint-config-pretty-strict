@@ -250,7 +250,7 @@ module.exports = {
     "no-useless-rename": "error",
     "no-var": "error",
     "object-shorthand": ["error", "always", { avoidQuotes: true }],
-    "prefer-arrow-callback": ["error", { allowUnboundThis: false }],
+    "prefer-arrow-callback": "error",
     "prefer-const": ["error", { ignoreReadBeforeAssign: true }],
     "prefer-destructuring": "error",
     "prefer-numeric-literals": "error",
