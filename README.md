@@ -1,6 +1,6 @@
 # eslint-config-pretty-strict
 
-Strict [ESLint](https://eslint.org) config with [Prettier](https://prettier.io/) as a code formatter
+A strict [ESLint](https://eslint.org) config with [Prettier](https://prettier.io/) as a code formatter
 
 _Note that this config is under initial development (< v1.0.0), so semver minor releases may introduce breaking changes_.
 
