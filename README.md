@@ -17,8 +17,8 @@ This config provides strictly configured [ESLint](https://eslint.org/docs/about/
 Install [eslint](https://github.com/eslint/eslint), [prettier](https://github.com/prettier/prettier), [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) and [eslint-config-pretty-strict](./README.md):
 
 ```bash
-npm install --save-dev eslint eslint-plugin-prettier github:rtomrud/eslint-config-pretty-strict
-npm install --save-dev --save-exact prettier
+npm install --save-dev eslint eslint-plugin-prettier eslint-config-pretty-strict
+npm install --save-dev --save-exact prettier # Prettier's patches have breaking changes
 ```
 
 _Note that this config is under initial development (< v1.0.0), so semver minor releases may introduce breaking changes_.
