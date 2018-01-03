@@ -32,28 +32,20 @@ module.exports = {
         allow: ["error", "group", "groupCollapsed", "groupEnd", "info", "warn"]
       }
     ],
-    "no-constant-condition": ["error", { checkLoops: true }],
+    "no-constant-condition": "error",
     "no-control-regex": "error",
     "no-debugger": "error",
     "no-dupe-args": "error",
     "no-dupe-keys": "error",
     "no-duplicate-case": "error",
-    "no-empty": ["error", { allowEmptyCatch: false }],
+    "no-empty": "error",
     "no-empty-character-class": "error",
     "no-ex-assign": "error",
     "no-extra-boolean-cast": "error",
     "no-func-assign": "error",
     "no-inner-declarations": ["error", "both"],
     "no-invalid-regexp": "error",
-    "no-irregular-whitespace": [
-      "error",
-      {
-        skipStrings: false,
-        skipComments: false,
-        skipRegExps: false,
-        skipTemplates: false
-      }
-    ],
+    "no-irregular-whitespace": ["error", { skipStrings: false }],
     "no-obj-calls": "error",
     "no-prototype-builtins": "error",
     "no-regex-spaces": "error",
@@ -66,28 +58,21 @@ module.exports = {
     "valid-jsdoc": [
       "error",
       {
-        requireReturn: true,
-        requireReturnType: true,
         requireParamDescription: false,
         requireReturnDescription: false
       }
     ],
     "valid-typeof": ["error", { requireStringLiterals: true }],
-    "accessor-pairs": ["error", { setWithoutGet: true, getWithoutSet: false }],
-    "array-callback-return": ["error", { allowImplicit: false }],
+    "accessor-pairs": "error",
+    "array-callback-return": "error",
     "block-scoped-var": "error",
     "class-methods-use-this": "error",
     complexity: ["warn", { max: complexity }],
-    "consistent-return": ["error", { treatUndefinedAsUnspecified: false }],
-    curly: [
-      "error",
-
-      // MUST be "all" or "multi" to work with Prettier
-      "all"
-    ],
+    "consistent-return": "error",
+    curly: "error",
     "default-case": "error",
-    "dot-notation": ["error", { allowKeywords: true }],
-    eqeqeq: ["error", "always", { null: "always" }],
+    "dot-notation": "error",
+    eqeqeq: "error",
     "guard-for-in": "error",
     "no-alert": "error",
     "no-caller": "error",
@@ -95,30 +80,25 @@ module.exports = {
     "no-else-return": ["error", { allowElseIf: false }],
     "no-empty-function": "error",
     "no-empty-pattern": "error",
-    "no-eval": ["error", { allowIndirect: false }],
+    "no-eval": "error",
     "no-extend-native": "error",
     "no-extra-bind": "error",
     "no-extra-label": "error",
     "no-fallthrough": "error",
     "no-global-assign": "error",
-    "no-implicit-coercion": [
-      "error",
-      { boolean: true, number: true, string: true }
-    ],
+    "no-implicit-coercion": "error",
     "no-implicit-globals": "error",
     "no-implied-eval": "error",
     "no-invalid-this": "error",
     "no-iterator": "error",
-    "no-labels": ["error", { allowLoop: false, allowSwitch: false }],
+    "no-labels": "error",
     "no-lone-blocks": "error",
     "no-loop-func": "error",
     "no-magic-numbers": [
       "error",
       {
         ignore: [-1, 0, 1, 2],
-        ignoreArrayIndexes: false,
-        enforceConst: true,
-        detectObjects: false
+        enforceConst: true
       }
     ],
     "no-multi-str": "error",
@@ -138,14 +118,7 @@ module.exports = {
     "no-sequences": "error",
     "no-throw-literal": "error",
     "no-unmodified-loop-condition": "error",
-    "no-unused-expressions": [
-      "error",
-      {
-        allowShortCircuit: false,
-        allowTernary: false,
-        allowTaggedTemplates: false
-      }
-    ],
+    "no-unused-expressions": "error",
     "no-unused-labels": "error",
     "no-useless-call": "error",
     "no-useless-concat": "error",
@@ -153,13 +126,13 @@ module.exports = {
     "no-useless-return": "error",
     "no-void": "error",
     "no-with": "error",
-    "prefer-promise-reject-errors": ["error", { allowEmptyReject: false }],
-    radix: ["error", "always"],
+    "prefer-promise-reject-errors": "error",
+    radix: "error",
     "require-await": "error",
     "vars-on-top": "error",
-    yoda: ["error", "never", { exceptRange: false, onlyEquality: false }],
-    strict: ["error", "safe"],
-    "init-declarations": ["error", "always"],
+    yoda: "error",
+    strict: "error",
+    "init-declarations": "error",
     "no-catch-shadow": "error",
     "no-delete-var": "error",
     "no-label-var": "error",
@@ -169,32 +142,21 @@ module.exports = {
     "no-unused-vars": [
       "error",
       {
-        vars: "all",
         args: "all",
         ignoreRestSiblings: true,
         caughtErrors: "all"
       }
     ],
-    "no-use-before-define": [
-      "error",
-      { functions: true, classes: true, variables: true }
-    ],
+    "no-use-before-define": "error",
     camelcase: ["error", { properties: "never" }],
-    "func-name-matching": [
-      "error",
-      "always",
-      { includeCommonJSModuleExports: false }
-    ],
+    "func-name-matching": "error",
     "func-names": ["error", "as-needed"],
-    "func-style": ["error", "expression", { allowArrowFunctions: true }],
+    "func-style": "error",
     "id-length": ["warn", { min: 1, max: idLength, properties: "never" }],
     "lines-around-comment": [
       "error",
       {
-        beforeBlockComment: true,
-        afterBlockComment: false,
         beforeLineComment: true,
-        afterLineComment: false,
 
         // MUST be `true` to work with Prettier
         allowBlockStart: true,
@@ -217,19 +179,13 @@ module.exports = {
         applyDefaultIgnorePatterns: false
       }
     ],
-    "lines-between-class-members": [
-      "error",
-      "always",
-      { exceptAfterSingleLine: false }
-    ],
+    "lines-between-class-members": "error",
     "max-depth": ["warn", depth],
     "max-len": [
       "error",
       {
         code: printWidth,
         tabWidth,
-        ignoreComments: false,
-        ignoreTrailingComments: false,
         ignoreUrls: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
@@ -240,11 +196,11 @@ module.exports = {
     "max-nested-callbacks": ["warn", nestedCallbacks],
     "max-params": ["warn", params],
     "max-statements": ["warn", statements, { ignoreTopLevelFunctions: true }],
-    "max-statements-per-line": ["error", { max: 1 }],
+    "max-statements-per-line": "error",
     "multiline-comment-style": ["error", "separate-lines"],
-    "new-cap": ["error", { newIsCap: true, capIsNew: false, properties: true }],
+    "new-cap": ["error", { capIsNew: false }],
     "no-array-constructor": "error",
-    "no-bitwise": ["error", { int32Hint: false }],
+    "no-bitwise": "error",
     "no-continue": "error",
     "no-inline-comments": "error",
     "no-lonely-if": "error",
@@ -302,17 +258,10 @@ module.exports = {
       }
     ],
     "no-tabs": useTabs ? "off" : "error",
-    "no-underscore-dangle": [
-      "error",
-      {
-        allowAfterThis: false,
-        allowAfterSuper: false,
-        enforceInMethodNames: true
-      }
-    ],
+    "no-underscore-dangle": ["error", { enforceInMethodNames: true }],
     "no-unneeded-ternary": ["error", { defaultAssignment: false }],
     "one-var": ["error", "never"],
-    "operator-assignment": ["error", "always"],
+    "operator-assignment": "error",
     "padding-line-between-statements": [
       "error",
       { blankLine: "always", prev: ["*"], next: ["class", "function"] },
@@ -325,12 +274,8 @@ module.exports = {
       { blankLine: "any", prev: ["import"], next: ["import"] },
       { blankLine: "any", prev: ["export"], next: ["export"] }
     ],
-    "spaced-comment": ["error", "always"],
-    "arrow-body-style": [
-      "error",
-      "as-needed",
-      { requireReturnForObjectLiteral: false }
-    ],
+    "spaced-comment": "error",
+    "arrow-body-style": "error",
     "constructor-super": "error",
     "no-class-assign": "error",
     "no-const-assign": "error",
@@ -340,33 +285,12 @@ module.exports = {
     "no-this-before-super": "error",
     "no-useless-computed-key": "error",
     "no-useless-constructor": "error",
-    "no-useless-rename": [
-      "error",
-      { ignoreDestructuring: false, ignoreImport: false, ignoreExport: false }
-    ],
+    "no-useless-rename": "error",
     "no-var": "error",
-    "object-shorthand": [
-      "error",
-      "always",
-      {
-        avoidQuotes: true,
-        ignoreConstructors: false,
-        avoidExplicitReturnArrows: false
-      }
-    ],
-    "prefer-arrow-callback": [
-      "error",
-      { allowNamedFunctions: false, allowUnboundThis: false }
-    ],
-    "prefer-const": [
-      "error",
-      { destructuring: "any", ignoreReadBeforeAssign: true }
-    ],
-    "prefer-destructuring": [
-      "error",
-      { array: true, object: true },
-      { enforceForRenamedProperties: false }
-    ],
+    "object-shorthand": ["error", "always", { avoidQuotes: true }],
+    "prefer-arrow-callback": ["error", { allowUnboundThis: false }],
+    "prefer-const": ["error", { ignoreReadBeforeAssign: true }],
+    "prefer-destructuring": "error",
     "prefer-numeric-literals": "error",
     "prefer-rest-params": "error",
     "prefer-spread": "error",
