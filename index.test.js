@@ -8,7 +8,7 @@ test("index.js with eslint", ({ doesNotThrow, end }) => {
   doesNotThrow(
     () => new CLIEngine({ configFile: "./index.js" }),
     Error,
-    "should be parsed and validated by eslint CLIEngine"
+    "should be parsed and validated by ESLint's CLIEngine"
   );
   end();
 });
@@ -22,17 +22,17 @@ test("index.js with eslint-plugin-prettier", ({ equal, end }) => {
   equal(
     index.rules["prettier/prettier"][0],
     "error",
-    "should turn on eslint-plugin-prettier rule"
+    "should turn on prettier rule as an error"
   );
   end();
 });
 
 test("index.js max-len rule with eslint-plugin-prettier", ({ equal, end }) => {
   const {
-    "max-len": [, { code: printWidthMaxLen, tabWidth: tabWidthMaxLen }],
-    "prettier/prettier": [, { printWidth, tabWidth }]
+    "max-len": [, maxLen],
+    "prettier/prettier": [, prettier]
   } = index.rules;
-  equal(printWidthMaxLen, printWidth, "should use the Prettier's printWidth");
-  equal(tabWidthMaxLen, tabWidth, "should use Prettier's tabWidth");
+  equal(maxLen.code, prettier.printWidth, "should use Prettier's printWidth");
+  equal(maxLen.tabWidth, prettier.tabWidth, "should use Prettier's tabWidth");
   end();
 });
