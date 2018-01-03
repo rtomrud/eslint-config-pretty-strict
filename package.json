@@ -9,7 +9,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rtomrud/eslint-config-pretty-strict"
+    "url": "https://github.com/rtomrud/eslint-config-pretty-strict.git"
   },
   "author": "Artem Rudenko <rtomrud@gmail.com>",
   "files": [
