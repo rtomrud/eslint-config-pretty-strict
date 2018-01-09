@@ -1,38 +1,40 @@
 "use strict";
 
+/* eslint-disable func-names, prefer-arrow-callback, prefer-destructuring */
+
 const test = require("tape");
-const { CLIEngine } = require("eslint");
+const eslint = require("eslint");
 const index = require("./index.js");
 
-test("index.js with eslint", ({ doesNotThrow, end }) => {
-  doesNotThrow(
-    () => new CLIEngine({ configFile: "./index.js" }),
+test("index.js with eslint", function(t) {
+  t.doesNotThrow(
+    function() {
+      return new eslint.CLIEngine({ configFile: "./index.js" });
+    },
     Error,
     "should be parsed and validated by ESLint's CLIEngine"
   );
-  end();
+  t.end();
 });
 
-test("index.js with eslint-plugin-prettier", ({ equal, end }) => {
-  equal(
-    Array.isArray(index.plugins) && index.plugins.includes("prettier"),
+test("index.js with eslint-plugin-prettier", function(t) {
+  t.equal(
+    Array.isArray(index.plugins) && index.plugins.indexOf("prettier") !== -1,
     true,
     "should use eslint-plugin-prettier"
   );
-  equal(
+  t.equal(
     index.rules["prettier/prettier"][0],
     "error",
     "should turn on prettier rule as an error"
   );
-  end();
+  t.end();
 });
 
-test("index.js max-len rule with eslint-plugin-prettier", ({ equal, end }) => {
-  const {
-    "max-len": [, maxLen],
-    "prettier/prettier": [, prettier]
-  } = index.rules;
-  equal(maxLen.code, prettier.printWidth, "should use Prettier's printWidth");
-  equal(maxLen.tabWidth, prettier.tabWidth, "should use Prettier's tabWidth");
-  end();
+test("index.js max-len rule with eslint-plugin-prettier", function(t) {
+  const maxLen = index.rules["max-len"][1];
+  const prettier = index.rules["prettier/prettier"][1];
+  t.equal(maxLen.code, prettier.printWidth, "should use Prettier's printWidth");
+  t.equal(maxLen.tabWidth, prettier.tabWidth, "should use Prettier's tabWidth");
+  t.end();
 });
