@@ -193,6 +193,11 @@ module.exports = {
       {
         selector: ":not(CallExpression) > Identifier[name=undefined]",
         message: "Don't use `undefined`, except as argument to functions."
+      },
+      {
+        selector: "BinaryExpression[operator=instanceof]",
+        message:
+          "Don't use `instanceof`, use `Array.prototype.isArray` or duck typing instead."
       }
     ],
     "no-underscore-dangle": "error",
