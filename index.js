@@ -60,7 +60,7 @@ module.exports = {
     curly: "error",
     "default-case": "error",
     "dot-notation": "error",
-    eqeqeq: "error",
+    eqeqeq: ["error", "always", { null: "ignore" }],
     "guard-for-in": "error",
     "no-alert": "error",
     "no-caller": "error",
