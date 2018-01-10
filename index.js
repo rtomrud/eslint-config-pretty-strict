@@ -124,7 +124,6 @@ module.exports = {
     "no-shadow-restricted-names": "error",
     "no-undef": "error",
     "no-undef-init": "error",
-    "no-undefined": "error",
     "no-unused-vars": ["error", { ignoreRestSiblings: true }],
     "no-use-before-define": "error",
     camelcase: ["error", { properties: "never" }],
@@ -195,6 +194,10 @@ module.exports = {
       {
         selector: "UnaryExpression[operator=void]",
         message: "Don't use `void`. Use `return null;` or `return;` instead."
+      },
+      {
+        selector: ":not(CallExpression) > Identifier[name=undefined]",
+        message: "Don't use `undefined`, except as argument to functions."
       }
     ],
     "no-underscore-dangle": "error",
