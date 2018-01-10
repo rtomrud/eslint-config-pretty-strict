@@ -192,10 +192,6 @@ module.exports = {
         message: "Don't use the `,` operator. Use `{ }` instead."
       },
       {
-        selector: "UnaryExpression[operator=void]",
-        message: "Don't use `void`. Use `return null;` or `return;` instead."
-      },
-      {
         selector: ":not(CallExpression) > Identifier[name=undefined]",
         message: "Don't use `undefined`, except as argument to functions."
       }
