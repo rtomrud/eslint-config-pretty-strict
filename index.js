@@ -187,6 +187,10 @@ module.exports = {
         message: "Don't use `for of`. Use higher-order functions instead."
       },
       {
+        selector: "ForStatement",
+        message: "Don't use `for`. Use higher-order functions instead."
+      },
+      {
         selector: "SequenceExpression",
         message: "Don't use the `,` operator. Use `{ }` instead."
       },
