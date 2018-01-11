@@ -2,6 +2,21 @@
   "name": "eslint-config-pretty-strict",
   "version": "0.5.0",
   "description": "A strict ESLint config with Prettier as a code formatter",
+  "keywords": [
+    "check",
+    "clean",
+    "code",
+    "consistent",
+    "enforce",
+    "eslint",
+    "format",
+    "hint",
+    "lint",
+    "policy",
+    "prettier",
+    "quality",
+    "style"
+  ],
   "homepage": "https://github.com/rtomrud/eslint-config-pretty-strict#readme",
   "bugs": {
     "url": "https://github.com/rtomrud/eslint-config-pretty-strict/issues"
