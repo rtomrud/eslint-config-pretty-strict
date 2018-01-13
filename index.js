@@ -209,11 +209,15 @@ module.exports = {
     "operator-assignment": "error",
     "padding-line-between-statements": [
       "error",
-      { blankLine: "always", prev: ["*"], next: ["class", "function"] },
       {
         blankLine: "always",
-        prev: ["directive", "import", "export"],
+        prev: ["directive", "import", "export", "class", "function"],
         next: ["*"]
+      },
+      {
+        blankLine: "always",
+        prev: ["*"],
+        next: ["import", "export", "class", "function"]
       },
       { blankLine: "any", prev: ["directive"], next: ["directive"] },
       { blankLine: "any", prev: ["import"], next: ["import"] },
