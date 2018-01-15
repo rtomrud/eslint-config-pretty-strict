@@ -71,37 +71,49 @@ The rules of this config adhere to the following principles.
 
 ### 1. Ban Error-prone Code
 
-Allowed code must be easily told apart from errors. The linter should catch as many bugs as possible, so bug-prone code that has a safer alternative is banned.
+Allowed code must be easily told apart from errors. The linter should catch as many bugs as possible, so error-prone code that has a safer alternative is banned.
 
 > If a feature is sometimes useful and sometimes dangerous, and there is a better option, then always use the better option.—Douglas Crockford
 
 ```js
-// ✓ ok
-foo = bar;
-if (foo) {
+// ✓ ok, true only if `foo` is 1
+if (foo === 1) {
 }
 
-// ✗ bad
-if ((foo = bar)) {
-  // Was it meant as an assignment or as an equality test?
+// ✓ ok, true if `foo` is 1 or "1"
+if (Number(foo) === 1) {
+}
+
+// ✗ bad, is `foo` meant to be type coerced, or is it a typo?
+if (foo == 1) {
 }
 ```
 
 ```js
-// ✓ ok
-if (foo === 0) {
-  // Should be true only if `foo` is 0
-}
+// ✓ ok, delegates the method call to the `Object` prototype
+const foo = Object.prototype.hasOwnProperty.call(object, key);
 
-// ✓ ok
-if (Number(foo) === 0) {
-  // Should be true if `foo` is 0 or "0"
-}
+// ✗ bad, may be shadowed, or the object may come from `Object.create(null)`
+const foo = object.hasOwnProperty(key);
+```
 
-// ✗ bad
-if (foo == 0) {
-  // Was `foo` meant to be type coerced?
-}
+```js
+// ✓ ok, explicitely specifies the radix
+const foo = parseInt("042", 10);
+
+// ✗ bad, in pre-ES5 engines it is parsed as an octal if there's a leading 0
+const foo = parseInt("042");
+```
+
+```js
+// ✓ ok, doesn't extend native types
+const count = condition => array =>
+  array.reduce((count, item) => count + (condition(item) ? 1 : 0), 0);
+
+// ✗ bad, may break with future ECMAScript editions; not future-proof
+Array.prototype.count = function(condition) {
+  return this.reduce((count, item) => count + (condition(item) ? 1 : 0), 0);
+};
 ```
 
 ### 2. Don't Repeat Yourself
@@ -115,6 +127,15 @@ const { firstName, lastName } = user;
 // ✗ bad
 const firstName = user.firstName;
 const lastName = user.lastName;
+```
+
+```js
+// ✓ ok
+const [first, second] = users;
+
+// ✗ bad
+const first = users[0];
+const second = users[1];
 ```
 
 ```js
@@ -133,14 +154,6 @@ return {
 
 ```js
 // ✓ ok
-salary += bonus;
-
-// ✗ bad
-salary = salary + bonus;
-```
-
-```js
-// ✓ ok
 const foo = foo || bar;
 
 // ✗ bad
@@ -149,17 +162,7 @@ const foo = foo ? foo : bar;
 
 ### 3. Do One Thing
 
-Do it only. Per line of code. What's _One Thing_? Every statement, expression, clause, declaration or chained call should go on its own line. It speeds-up reading, scanning and refactoring. It makes typos stand out. And it makes diffs clearer.
-
-```js
-// ✓ ok
-if (foo) {
-  bar();
-}
-
-// ✗ bad
-if (foo) bar();
-```
+Do it only, per line of code. Statements, expressions, clauses or chained calls should go on their own lines. It speeds-up reading, scanning and refactoring. It makes typos stand out. It makes diffs clearer, by preventing punctuation-only diffs. And it simplifies using a debugger: you can set breakpoints more granularly, and step through things one by one instead of jumping through all at once.
 
 ```js
 // ✓ ok
@@ -177,6 +180,16 @@ let foo = 0,
 
 // ✗ very bad
 let foo = (bar = baz = 0);
+```
+
+```js
+// ✓ ok
+if (foo) {
+  bar();
+}
+
+// ✗ bad
+if (foo) bar();
 ```
 
 ### 4. Automate Formatting
