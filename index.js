@@ -126,7 +126,6 @@ module.exports = {
     "no-unused-vars": ["error", { ignoreRestSiblings: true }],
     "no-use-before-define": "error",
     camelcase: ["error", { properties: "never" }],
-    "func-name-matching": "error",
     "func-names": ["error", "as-needed"],
     "func-style": "error",
     "id-length": ["warn", { min: 1, max: idLength, properties: "never" }],
