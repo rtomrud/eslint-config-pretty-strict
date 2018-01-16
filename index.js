@@ -211,7 +211,15 @@ module.exports = {
       "error",
       {
         blankLine: "always",
-        prev: ["directive", "import", "export", "class", "function"],
+        prev: [
+          "directive",
+          "import",
+          "export",
+          "class",
+          "function",
+          "block",
+          "block-like"
+        ],
         next: ["*"]
       },
       {
