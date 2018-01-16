@@ -66,7 +66,10 @@ module.exports = {
     "no-caller": "error",
     "no-case-declarations": "error",
     "no-else-return": ["error", { allowElseIf: false }],
-    "no-empty-function": "error",
+    "no-empty-function": [
+      "error",
+      { allow: ["arrowFunctions", "functions", "methods"] }
+    ],
     "no-empty-pattern": "error",
     "no-eval": "error",
     "no-extend-native": "error",
