@@ -8,9 +8,9 @@ A strict [ESLint](https://eslint.org) config with [Prettier](https://prettier.io
 
 ## Motivation
 
-Code style must be consistent. Code should be unsurprising. The readers need to be able to trust that the structures and patterns they have seen in one source file will mean the same thing in others. Because a code base with an inconsistent style taxes the reader with additional cognitive load.
+Code style must be consistent. Code should be unsurprising. The readers need to be able to trust that the structures and patterns they have seen in one source file will mean the same thing in others. A code base with an inconsistent style taxes the reader with additional cognitive load.
 
-Forcing every contributor to read and comply with a style guide isn't a solution, as the rules can be hard to interiorize and apply, due to their sheer number. This leads to overlooked, inconsistent, or unenforced rules. Then code reviews catch style errors and time is wasted with nitpicks.
+Forcing every contributor to read and comply with a style guide isn't an ideal solution, as the rules can be hard to interiorize and apply. This leads to overlooked, inconsistent, or unenforced rules. Then code reviews catch style errors and time is wasted with nitpicks.
 
 _All_ style rules should be automatically enforced. Otherwise they aren't worth the trouble. Because you shouldn't have to waste time thinking about code style, the rules should require neither judgment calls nor memorizing.
 
