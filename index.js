@@ -155,6 +155,11 @@ module.exports = {
     "no-catch-shadow": "error",
     "no-delete-var": "error",
     "no-label-var": "error",
+    "no-restricted-globals": [
+      "error",
+      { name: "isNaN", message: "Use `Number.isNaN` instead." },
+      { name: "isFinite", message: "Use `Number.isFinite` instead." }
+    ],
     "no-shadow-restricted-names": "error",
     "no-undef": "error",
     "no-undef-init": "error",
