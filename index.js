@@ -4,7 +4,7 @@
 const printWidth = 80;
 const tabWidth = 2;
 
-/*
+/**
  * Arbitrary limits for rules that measure complexity and point at code smells
  * As these are subjective and can be hard to fix, they MUST be set to "warn"
  */
