@@ -25,8 +25,6 @@ npm install --save-dev eslint eslint-plugin-prettier eslint-config-pretty-strict
 npm install --save-dev --save-exact prettier # Prettier's patches have breaking changes
 ```
 
-_Note that this config is under initial development (< v1.0.0), so semver minor releases may introduce breaking changes_.
-
 ## Using
 
 Add an `"eslintConfig"` property in your `package.json` file and extend the [eslint-config-pretty-strict](./index.js):
