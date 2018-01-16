@@ -98,6 +98,39 @@ module.exports = {
     "no-param-reassign": ["error", { props: true }],
     "no-proto": "error",
     "no-redeclare": ["error", { builtinGlobals: true }],
+    "no-restricted-properties": [
+      "error",
+      {
+        object: "global",
+        property: "isNaN",
+        message: "Use `Number.isNaN` instead."
+      },
+      {
+        object: "window",
+        property: "isNaN",
+        message: "Use `Number.isNaN` instead."
+      },
+      {
+        object: "self",
+        property: "isNaN",
+        message: "Use `Number.isNaN` instead."
+      },
+      {
+        object: "global",
+        property: "isFinite",
+        message: "Use `Number.isFinite` instead."
+      },
+      {
+        object: "window",
+        property: "isFinite",
+        message: "Use `Number.isFinite` instead."
+      },
+      {
+        object: "self",
+        property: "isFinite",
+        message: "Use `Number.isFinite` instead."
+      }
+    ],
     "no-return-assign": ["error", "always"],
     "no-return-await": "error",
     "no-script-url": "error",
