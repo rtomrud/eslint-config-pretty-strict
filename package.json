@@ -46,7 +46,7 @@
     "prettier": "^1.10.2"
   },
   "engines": {
-    "node": ">=4"
+    "node": "4 || 6 || 8 || 9"
   },
   "scripts": {
     "pretest": "eslint --print-config index.js | eslint-config-prettier-check",
