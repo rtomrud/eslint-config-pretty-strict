@@ -75,7 +75,7 @@ module.exports = {
     "no-extend-native": "error",
     "no-extra-bind": "error",
     "no-extra-label": "error",
-    "no-fallthrough": "error",
+    "no-fallthrough": ["error", { commentPattern: ".^" }],
     "no-global-assign": "error",
     "no-implicit-coercion": "error",
     "no-implicit-globals": "error",
