@@ -53,21 +53,21 @@
     "test": "tape index.test.js | faucet",
     "posttest": "eslint ."
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test"
-    }
-  },
   "eslintConfig": {
-    "root": true,
+    "env": {
+      "node": true
+    },
     "extends": [
       "./index.js"
     ],
     "parserOptions": {
       "ecmaVersion": 2015
     },
-    "env": {
-      "node": true
+    "root": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
     }
   }
 }
