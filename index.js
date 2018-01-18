@@ -85,10 +85,6 @@ module.exports = {
     "no-labels": "error",
     "no-lone-blocks": "error",
     "no-loop-func": "error",
-    "no-magic-numbers": [
-      "error",
-      { ignore: [-1, 0, 1, 2], enforceConst: true }
-    ],
     "no-multi-str": "error",
     "no-new": "error",
     "no-new-func": "error",
