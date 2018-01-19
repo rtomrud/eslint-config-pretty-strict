@@ -1,6 +1,6 @@
-"use strict";
-
 /* eslint-disable func-names, prefer-arrow-callback, prefer-destructuring */
+
+"use strict";
 
 const test = require("tape");
 const eslint = require("eslint");
