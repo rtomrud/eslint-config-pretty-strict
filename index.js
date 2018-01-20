@@ -226,12 +226,23 @@ module.exports = {
         message: "Don't use `for`. Use higher-order functions instead."
       },
       {
-        selector: "SequenceExpression",
-        message: "Don't use the `,` operator. Use `{ }` instead."
+        selector:
+          ":matches(VariableDeclarator > Identifier.init[name=undefined], Property > Identifier[name=undefined])",
+        message: "Don't assign `undefined`, assign `null` or nothing instead."
       },
       {
-        selector: ":not(CallExpression) > Identifier[name=undefined]",
-        message: "Don't use `undefined`, except as argument to functions."
+        selector: "ReturnStatement > Identifier[name=undefined]",
+        message:
+          "Don't return `undefined`, return implicitly or use `return;` instead."
+      },
+      {
+        selector:
+          ":matches(ArrowFunctionExpression, FunctionExpression, FunctionDeclaration) > AssignmentPattern > Identifier[name=undefined]",
+        message: "Don't shadow `undefined`, use a different name instead."
+      },
+      {
+        selector: "SequenceExpression",
+        message: "Don't use the `,` operator. Use `{ }` instead."
       },
       {
         selector: "BinaryExpression[operator=instanceof]",
