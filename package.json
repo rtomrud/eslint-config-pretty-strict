@@ -35,7 +35,6 @@
     "eslint": "^4.16.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.5.0",
-    "faucet": "0.0.1",
     "husky": "^0.15.0-beta.16",
     "prettier": "1.10.2",
     "tape": "^4.8.0"
@@ -50,7 +49,7 @@
   },
   "scripts": {
     "pretest": "eslint --print-config index.js | eslint-config-prettier-check",
-    "test": "tape index.test.js | faucet",
+    "test": "tape index.test.js",
     "posttest": "eslint ."
   },
   "eslintConfig": {
