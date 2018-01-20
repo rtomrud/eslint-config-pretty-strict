@@ -7,13 +7,9 @@ const eslint = require("eslint");
 const index = require("./index.js");
 
 test("index.js with eslint", function(t) {
-  t.doesNotThrow(
-    function() {
-      return new eslint.CLIEngine({ configFile: "./index.js" });
-    },
-    Error,
-    "should be parsed and validated by ESLint's CLIEngine"
-  );
+  t.doesNotThrow(function() {
+    return new eslint.CLIEngine({ configFile: "./index.js" });
+  }, "should be parsed and validated by ESLint's CLIEngine");
   t.end();
 });
 
