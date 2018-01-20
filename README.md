@@ -32,7 +32,9 @@ Add an `"eslintConfig"` property in your `package.json` file and extend the [esl
 ```json
 {
   "eslintConfig": {
-    "extends": ["./node_modules/eslint-config-pretty-strict/index.js"],
+    "extends": [
+      "./node_modules/eslint-config-pretty-strict/index.js"
+    ],
     "parserOptions": {
       "ecmaVersion": 2015
     },
