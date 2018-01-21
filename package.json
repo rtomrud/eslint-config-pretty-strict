@@ -31,6 +31,11 @@
     "type": "git",
     "url": "https://github.com/rtomrud/eslint-config-pretty-strict.git"
   },
+  "scripts": {
+    "pretest": "eslint --print-config index.js | eslint-config-prettier-check",
+    "test": "tape index.test.js",
+    "posttest": "eslint ."
+  },
   "devDependencies": {
     "eslint": "^4.16.0",
     "eslint-config-prettier": "^2.9.0",
@@ -46,11 +51,6 @@
   },
   "engines": {
     "node": "4 || 6 || 8 || 9"
-  },
-  "scripts": {
-    "pretest": "eslint --print-config index.js | eslint-config-prettier-check",
-    "test": "tape index.test.js",
-    "posttest": "eslint ."
   },
   "eslintConfig": {
     "env": {
