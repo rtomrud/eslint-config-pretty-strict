@@ -1,33 +1,31 @@
 # eslint-config-pretty-strict
 
-[![Build Status](https://travis-ci.org/rtomrud/eslint-config-pretty-strict.svg?branch=master)](https://travis-ci.org/rtomrud/eslint-config-pretty-strict)
 [![npm version](https://img.shields.io/npm/v/eslint-config-pretty-strict.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-pretty-strict)
+[![Build Status](https://img.shields.io/travis/rtomrud/eslint-config-pretty-strict/master.svg?style=flat-square)](https://travis-ci.org/rtomrud/eslint-config-pretty-strict)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 A strict [ESLint](https://eslint.org) config with [Prettier](https://prettier.io/) as a code formatter
 
-## Motivation
+## Purpose
 
 Code style must be consistent. Code should be unsurprising. The readers need to be able to trust that the structures and patterns they have seen in one source file will mean the same thing in others. A code base with an inconsistent style taxes the reader with additional cognitive load.
 
-Forcing every contributor to read and comply with a style guide isn't an ideal solution, as the rules can be hard to interiorize and apply. This leads to overlooked, inconsistent, or unenforced rules. Then code reviews catch style errors and time is wasted with nitpicks.
+Forcing every contributor to read and comply with a style guide isn't an ideal solution, as the rules can be hard to interiorize. This leads to overlooked or unenforced rules. Then code reviews catch style errors and time is wasted with nitpicks.
 
 _All_ style rules should be automatically enforced. Otherwise they aren't worth the trouble. Because you shouldn't have to waste time thinking about code style, the rules should require neither judgment calls nor memorizing.
 
-This config provides strictly configured [ESLint](https://eslint.org/docs/about/) rules to [prevent errors](#1-ban-error-prone-code) and enforce [best](#2-dont-repeat-yourself) [practices](#3-do-one-thing). It also [automates code formatting](#4-automate-formatting) through [Prettier](https://prettier.io/docs/en/index.html) and [automatically fixable ESLint rules](https://eslint.org/docs/user-guide/command-line-interface#--fix) to ensure a consistent style.
+This opinionated linter config provides strictly configured [ESLint](https://eslint.org/docs/about/) rules to [prevent errors](#1-ban-error-prone-code) and enforce [best](#2-dont-repeat-yourself) [practices](#3-do-one-thing). It also [automatically formats code](#4-automate-formatting) through [Prettier](https://prettier.io/docs/en/index.html) and [fixable ESLint rules](https://eslint.org/docs/user-guide/command-line-interface#--fix) to ensure consistent formatting.
 
 ## Installing
 
-Install [eslint](https://github.com/eslint/eslint), [prettier](https://github.com/prettier/prettier), [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) and [eslint-config-pretty-strict](./README.md):
+Install [eslint-config-pretty-strict](./) and its peer dependencies [eslint](https://github.com/eslint/eslint), [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) and [prettier](https://github.com/prettier/prettier):
 
 ```bash
-npm install --save-dev eslint eslint-plugin-prettier eslint-config-pretty-strict
+npm install --save-dev eslint-config-pretty-strict eslint eslint-plugin-prettier
 npm install --save-dev --save-exact prettier # Prettier's patches have breaking changes
 ```
 
-## Using
-
-Add an `"eslintConfig"` property in your `package.json` file and extend the [eslint-config-pretty-strict](./index.js):
+Add an `"eslintConfig"` property to your `package.json` file and extend [eslint-config-pretty-strict](./index.js):
 
 ```json
 {
@@ -45,33 +43,26 @@ Add an `"eslintConfig"` property in your `package.json` file and extend the [esl
 
 Alternatively, use an [.eslintrc.\* configuration file](https://eslint.org/docs/user-guide/configuring#using-configuration-files).
 
-### Running ESLint
+## Using
 
 Run [ESLint via the command line](https://eslint.org/docs/user-guide/command-line-interface) with:
 
 ```bash
 ./node_modules/.bin/eslint .
+
+# Alternatively, automatically fix some problems the --fix option
+./node_modules/.bin/eslint . --fix
 ```
 
-You can automatically fix some of the detected problems by [running ESLint with the --fix option](https://eslint.org/docs/user-guide/command-line-interface#options).
-
-Note that you can install an [ESLint plugin](https://eslint.org/docs/user-guide/integrations#editors) and a [Prettier plugin](https://prettier.io/docs/en/editors.html) for your text editor of choice, to see and fix the style problems directly in your text editor.
-
-### Configuring ESLint with your own rules
-
-ESLint allows [granularly configuring](https://eslint.org/docs/user-guide/configuring) any setting.
-
-You can [configure it on a per-folder basis](https://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy), [extend other configs](https://eslint.org/docs/user-guide/configuring#extending-configuration-files), and specify [parsers](https://eslint.org/docs/user-guide/configuring#specifying-parser-options), [environments](https://eslint.org/docs/user-guide/configuring#specifying-environments), or [rules](https://eslint.org/docs/user-guide/configuring#configuring-rules).
-
-You may want to [disable a rule with in-line comments](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments) when there is a legitimate use case for code causing linting errors.
+Note that you can install an [ESLint plugin](https://eslint.org/docs/user-guide/integrations#editors) for your text editor of choice, to see and fix the style problems directly from your editor. You could also use a [Prettier plugin](https://prettier.io/docs/en/editors.html) to automatically format with a keyboard shortcut or on file save.
 
 ## Principles
 
-The rules of this config adhere to the following principles.
+The purpose of this config is enforcing the following principles.
 
 ### 1. Ban Error-prone Code
 
-Allowed code must be easily told apart from errors. The linter should catch as many bugs as possible, so error-prone code that has a safer alternative is banned.
+Allowed code must be easily told apart from errors, so error-prone code that has a safer alternative is banned.
 
 > If a feature is sometimes useful and sometimes dangerous, and there is a better option, then always use the better option.—Douglas Crockford
 
@@ -118,7 +109,7 @@ Array.prototype.count = function(condition) {
 
 ### 2. Don't Repeat Yourself
 
-Use syntax that minimizes duplication.
+Use syntax that minimizes duplication. It reduces visual clutter and makes refactoring easier.
 
 ```js
 // ✓ ok
@@ -154,10 +145,10 @@ return {
 
 ```js
 // ✓ ok
-const foo = foo || bar;
+const foo = bar || baz;
 
 // ✗ bad
-const foo = foo ? foo : bar;
+const foo = bar ? bar : baz;
 ```
 
 ### 3. Do One Thing
@@ -198,9 +189,17 @@ Use [Prettier](https://prettier.io/) to format the code in a consistent, legible
 
 > Formatting is a computer's job.—Kent Beck
 
-This config enables [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) so that ESLint reports the errors detected by Prettier and lets you fix them with its `--fix` option. That way you don't have to worry about running both ESLint _and_ Prettier, you only have to run ESLint and it will handle both linting and formatting.
+This config enables [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) so that ESLint reports the formatting problems detected by Prettier and lets you fix them with its `--fix` option. That way you don't have to worry about running both ESLint _and_ Prettier, you only have to run ESLint and it will handle both linting and formatting.
 
 The rules of this config are set up not to conflict with Prettier in any way.
+
+## Configuring ESLint with your own rules
+
+> What if I don't agree with some rule?
+
+ESLint allows [granularly configuring](https://eslint.org/docs/user-guide/configuring) any setting. You can [configure it on a per-folder basis](https://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy), [extend configs](https://eslint.org/docs/user-guide/configuring#extending-configuration-files), and specify [parsers](https://eslint.org/docs/user-guide/configuring#specifying-parser-options), [environments](https://eslint.org/docs/user-guide/configuring#specifying-environments) or [rules](https://eslint.org/docs/user-guide/configuring#configuring-rules).
+
+You may want to [disable a rule with in-line comments](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments) when there is a legitimate use case for code reported by the linter.
 
 ## License
 
