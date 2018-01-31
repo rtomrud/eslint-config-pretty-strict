@@ -8,13 +8,13 @@ const tabWidth = 2;
  * Arbitrary limits for rules that measure complexity and point at code smells
  * As these are subjective and can be hard to fix, they MUST be set to "warn"
  */
-const complexity = 16;
-const idLength = 32;
-const depth = 2;
-const lines = 512;
-const nestedCallbacks = 2;
-const params = 4;
-const statements = 16;
+const MAX_DEPTH = 2;
+const MAX_NESTED_CALLBACKS = MAX_DEPTH;
+const ID_LENGTH = 32;
+const MAX_PARAMS = 4;
+const COMPLEXITY = 16;
+const MAX_STATEMENTS = 16;
+const MAX_LINES = 512;
 
 module.exports = {
   plugins: ["prettier"],
@@ -55,7 +55,7 @@ module.exports = {
     "array-callback-return": ["error", { allowImplicit: true }],
     "block-scoped-var": "error",
     "class-methods-use-this": "error",
-    complexity: ["warn", { max: complexity }],
+    complexity: ["warn", { max: COMPLEXITY }],
     "consistent-return": "error",
     curly: "error",
     "default-case": "error",
@@ -164,7 +164,7 @@ module.exports = {
     camelcase: ["error", { properties: "never" }],
     "func-names": ["error", "as-needed"],
     "func-style": "error",
-    "id-length": ["warn", { min: 1, max: idLength, properties: "never" }],
+    "id-length": ["warn", { min: 1, max: ID_LENGTH, properties: "never" }],
     "lines-around-comment": [
       "error",
       {
@@ -182,7 +182,7 @@ module.exports = {
       }
     ],
     "lines-between-class-members": "error",
-    "max-depth": ["warn", depth],
+    "max-depth": ["warn", MAX_DEPTH],
     "max-len": [
       "error",
       {
@@ -194,10 +194,14 @@ module.exports = {
         ignoreRegExpLiterals: true
       }
     ],
-    "max-lines": ["warn", lines],
-    "max-nested-callbacks": ["warn", nestedCallbacks],
-    "max-params": ["warn", params],
-    "max-statements": ["warn", statements, { ignoreTopLevelFunctions: true }],
+    "max-lines": ["warn", MAX_LINES],
+    "max-nested-callbacks": ["warn", MAX_NESTED_CALLBACKS],
+    "max-params": ["warn", MAX_PARAMS],
+    "max-statements": [
+      "warn",
+      MAX_STATEMENTS,
+      { ignoreTopLevelFunctions: true }
+    ],
     "max-statements-per-line": "error",
     "multiline-comment-style": "error",
     "new-cap": ["error", { capIsNew: false }],
