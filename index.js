@@ -8,7 +8,6 @@ const tabWidth = 2;
 const MAX_DEPTH = 2;
 const MAX_NESTED_CALLBACKS = MAX_DEPTH;
 const MAX_PARAMS = 4;
-const COMPLEXITY = 16;
 const MAX_LINES = 999;
 
 module.exports = {
@@ -50,7 +49,6 @@ module.exports = {
     "array-callback-return": ["error", { allowImplicit: true }],
     "block-scoped-var": "error",
     "class-methods-use-this": "error",
-    complexity: ["warn", { max: COMPLEXITY }],
     "consistent-return": "error",
     curly: "error",
     "default-case": "error",
