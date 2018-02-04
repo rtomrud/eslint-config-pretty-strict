@@ -7,7 +7,6 @@ const tabWidth = 2;
 // Complexity limits that point at code smells, MUST be set to "warn"
 const MAX_DEPTH = 2;
 const MAX_NESTED_CALLBACKS = MAX_DEPTH;
-const ID_LENGTH = 32;
 const MAX_PARAMS = 4;
 const COMPLEXITY = 16;
 const MAX_STATEMENTS = 16;
@@ -161,7 +160,6 @@ module.exports = {
     camelcase: ["error", { properties: "never" }],
     "func-names": ["error", "as-needed"],
     "func-style": "error",
-    "id-length": ["warn", { min: 1, max: ID_LENGTH, properties: "never" }],
     "lines-around-comment": [
       "error",
       {
