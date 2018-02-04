@@ -11,7 +11,7 @@ const ID_LENGTH = 32;
 const MAX_PARAMS = 4;
 const COMPLEXITY = 16;
 const MAX_STATEMENTS = 16;
-const MAX_LINES = 512;
+const MAX_LINES = 999;
 
 module.exports = {
   plugins: ["prettier"],
