@@ -4,10 +4,7 @@
 const printWidth = 80;
 const tabWidth = 2;
 
-/**
- * Arbitrary limits for rules that measure complexity and point at code smells
- * As these are subjective and can be hard to fix, they MUST be set to "warn"
- */
+// Complexity limits that point at code smells, MUST be set to "warn"
 const MAX_DEPTH = 2;
 const MAX_NESTED_CALLBACKS = MAX_DEPTH;
 const ID_LENGTH = 32;
