@@ -9,7 +9,6 @@ const MAX_DEPTH = 2;
 const MAX_NESTED_CALLBACKS = MAX_DEPTH;
 const MAX_PARAMS = 4;
 const COMPLEXITY = 16;
-const MAX_STATEMENTS = 16;
 const MAX_LINES = 999;
 
 module.exports = {
@@ -192,11 +191,6 @@ module.exports = {
     "max-lines": ["warn", MAX_LINES],
     "max-nested-callbacks": ["warn", MAX_NESTED_CALLBACKS],
     "max-params": ["warn", MAX_PARAMS],
-    "max-statements": [
-      "warn",
-      MAX_STATEMENTS,
-      { ignoreTopLevelFunctions: true }
-    ],
     "max-statements-per-line": "error",
     "multiline-comment-style": "error",
     "new-cap": ["error", { capIsNew: false }],
