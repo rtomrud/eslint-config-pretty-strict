@@ -1,6 +1,6 @@
 "use strict";
 
-// MUST be synchronized with Prettier (use their defaults)
+// Prettier's defaults
 const printWidth = 80;
 const tabWidth = 2;
 
