@@ -185,7 +185,7 @@ if (foo) bar();
 
 ### 4. Automate Formatting
 
-Use [Prettier](https://prettier.io/) to format the code in a consistent, legible, and mostly standard and unastonishing way. This frees you from the burden of remembering formatting rules and applying them by hand.
+Use [Prettier](https://prettier.io/) to automatically format the code in a consistent, legible, and mostly standard and unastonishing way. This frees you from the burden of remembering formatting rules and applying them by hand. [More on why it matters](https://prettier.io/docs/en/why-prettier.html).
 
 > Formatting is a computer's job.—Kent Beck
 
