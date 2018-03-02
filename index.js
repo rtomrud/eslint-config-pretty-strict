@@ -92,32 +92,32 @@ module.exports = {
       {
         object: "global",
         property: "isNaN",
-        message: "Use `Number.isNaN` instead."
+        message: "Use 'Number.isNaN' instead."
       },
       {
         object: "window",
         property: "isNaN",
-        message: "Use `Number.isNaN` instead."
+        message: "Use 'Number.isNaN' instead."
       },
       {
         object: "self",
         property: "isNaN",
-        message: "Use `Number.isNaN` instead."
+        message: "Use 'Number.isNaN' instead."
       },
       {
         object: "global",
         property: "isFinite",
-        message: "Use `Number.isFinite` instead."
+        message: "Use 'Number.isFinite' instead."
       },
       {
         object: "window",
         property: "isFinite",
-        message: "Use `Number.isFinite` instead."
+        message: "Use 'Number.isFinite' instead."
       },
       {
         object: "self",
         property: "isFinite",
-        message: "Use `Number.isFinite` instead."
+        message: "Use 'Number.isFinite' instead."
       }
     ],
     "no-return-assign": ["error", "always"],
@@ -146,8 +146,8 @@ module.exports = {
     "no-label-var": "error",
     "no-restricted-globals": [
       "error",
-      { name: "isNaN", message: "Use `Number.isNaN` instead." },
-      { name: "isFinite", message: "Use `Number.isFinite` instead." }
+      { name: "isNaN", message: "Use 'Number.isNaN' instead." },
+      { name: "isFinite", message: "Use 'Number.isFinite' instead." }
     ],
     "no-shadow-restricted-names": "error",
     "no-undef": "error",
@@ -205,43 +205,49 @@ module.exports = {
       "error",
       {
         selector: "ForInStatement",
-        message: "Don't use `for in`. Use higher-order functions instead."
+        message:
+          "'for in' is restricted from being used. Use a higher-order function instead."
       },
       {
         selector: "ForOfStatement",
-        message: "Don't use `for of`. Use higher-order functions instead."
+        message:
+          "'for of' is restricted from being used. Use a higher-order function instead."
       },
       {
         selector: "ForStatement",
-        message: "Don't use `for`. Use higher-order functions instead."
+        message:
+          "'for' is restricted from being used. Use a higher-order function instead."
       },
       {
         selector:
           ":matches(VariableDeclarator > Identifier.init[name=undefined], Property > Identifier[name=undefined])",
-        message: "Don't assign `undefined`, assign `null` or nothing instead."
+        message:
+          "Unexpected use of 'undefined'. Assign 'null' or do not assign anything instead."
       },
       {
         selector: "ReturnStatement > Identifier[name=undefined]",
         message:
-          "Don't return `undefined`, return implicitly or use `return;` instead."
+          "Unexpected use of 'undefined'. Return implicitly or use 'return;' instead."
       },
       {
         selector:
           ":matches(ArrowFunctionExpression, FunctionExpression, FunctionDeclaration) > AssignmentPattern > Identifier[name=undefined]",
-        message: "Don't shadow `undefined`, use a different name instead."
+        message:
+          "Unexpected shadowing of 'undefined'. Use a different name instead."
       },
       {
         selector: "BinaryExpression[operator=instanceof][right.name=Array]",
-        message: "Don't use `instanceof`, use `Array.isArray` instead."
+        message:
+          "'instanceof' is restricted from being used. Use 'Array.isArray' instead."
       },
       {
         selector: "BinaryExpression[operator=instanceof][right.name!=Array]",
         message:
-          "Don't use `instanceof`, use `Object.prototype.isPrototypeOf instead"
+          "'instanceof' is restricted from being used. Use 'Object.prototype.isPrototypeOf' instead."
       },
       {
         selector: "SequenceExpression",
-        message: "Don't use the `,` operator. Use `{ }` instead."
+        message: "Unexpected use of ','. Use '{ }' instead."
       }
     ],
     "no-underscore-dangle": "error",
