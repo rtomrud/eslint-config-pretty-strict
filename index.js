@@ -231,13 +231,17 @@ module.exports = {
         message: "Don't shadow `undefined`, use a different name instead."
       },
       {
-        selector: "SequenceExpression",
-        message: "Don't use the `,` operator. Use `{ }` instead."
+        selector: "BinaryExpression[operator=instanceof][right.name=Array]",
+        message: "Don't use `instanceof`, use `Array.isArray` instead."
       },
       {
-        selector: "BinaryExpression[operator=instanceof]",
+        selector: "BinaryExpression[operator=instanceof][right.name!=Array]",
         message:
-          "Don't use `instanceof`, use `Array.prototype.isArray` or duck typing instead."
+          "Don't use `instanceof`, use `Object.prototype.isPrototypeOf instead"
+      },
+      {
+        selector: "SequenceExpression",
+        message: "Don't use the `,` operator. Use `{ }` instead."
       }
     ],
     "no-underscore-dangle": "error",
