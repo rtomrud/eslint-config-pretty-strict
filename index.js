@@ -155,7 +155,6 @@ module.exports = {
     "no-unused-vars": ["error", { ignoreRestSiblings: true }],
     "no-use-before-define": "error",
     camelcase: ["error", { properties: "never" }],
-    "func-names": ["error", "as-needed"],
     "func-style": "error",
     "lines-around-comment": [
       "error",

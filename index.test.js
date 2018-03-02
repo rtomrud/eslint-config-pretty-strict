@@ -1,4 +1,4 @@
-/* eslint-disable func-names, prefer-arrow-callback, prefer-destructuring */
+/* eslint-disable prefer-arrow-callback, prefer-destructuring */
 
 "use strict";
 
