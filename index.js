@@ -231,12 +231,6 @@ module.exports = {
           "Unexpected use of 'undefined'. Return implicitly or use 'return;' instead."
       },
       {
-        selector:
-          ":matches(ArrowFunctionExpression, FunctionExpression, FunctionDeclaration) > AssignmentPattern > Identifier[name=undefined]",
-        message:
-          "Unexpected shadowing of 'undefined'. Use a different name instead."
-      },
-      {
         selector: "BinaryExpression[operator=instanceof][right.name=Array]",
         message:
           "'instanceof' is restricted from being used. Use 'Array.isArray' instead."
