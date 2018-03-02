@@ -86,7 +86,7 @@ module.exports = {
     "no-octal-escape": "error",
     "no-param-reassign": "error",
     "no-proto": "error",
-    "no-redeclare": ["error", { builtinGlobals: true }],
+    "no-redeclare": "error",
     "no-restricted-properties": [
       "error",
       {
