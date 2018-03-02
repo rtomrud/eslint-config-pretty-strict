@@ -32,7 +32,7 @@ module.exports = {
     "no-ex-assign": "error",
     "no-extra-boolean-cast": "error",
     "no-func-assign": "error",
-    "no-inner-declarations": ["error", "both"],
+    "no-inner-declarations": "error",
     "no-invalid-regexp": "error",
     "no-irregular-whitespace": "error",
     "no-obj-calls": "error",
