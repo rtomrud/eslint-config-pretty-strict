@@ -220,12 +220,13 @@ module.exports = {
       },
       {
         selector:
-          ":matches(VariableDeclarator > Identifier.init[name=undefined], Property > Identifier[name=undefined])",
+          ":matches(VariableDeclarator[init.type=Identifier][init.name=undefined], AssignmentExpression[right.type=Identifier][right.name=undefined], Property[value.type=Identifier][value.name=undefined])",
         message:
           "Unexpected use of 'undefined'. Assign 'null' or do not assign anything instead."
       },
       {
-        selector: "ReturnStatement > Identifier[name=undefined]",
+        selector:
+          ":matches(ReturnStatement[argument.type=Identifier][argument.name=undefined], ArrowFunctionExpression[body.type=Identifier][body.name=undefined])",
         message:
           "Unexpected use of 'undefined'. Return implicitly or use 'return;' instead."
       },
