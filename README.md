@@ -50,7 +50,7 @@ Run [ESLint via the command line](https://eslint.org/docs/user-guide/command-lin
 ```bash
 ./node_modules/.bin/eslint .
 
-# Alternatively, automatically fix some problems the --fix option
+# Alternatively, automatically fix some problems with the --fix option
 ./node_modules/.bin/eslint . --fix
 ```
 
