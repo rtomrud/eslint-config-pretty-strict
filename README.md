@@ -58,7 +58,7 @@ Note that you can install an [ESLint plugin](https://eslint.org/docs/user-guide/
 
 ## Principles
 
-The purpose of this config is enforcing the following principles.
+This config follows the following principles.
 
 ### 1. Ban Error-prone Code
 
