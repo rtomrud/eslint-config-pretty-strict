@@ -34,7 +34,7 @@
   "scripts": {
     "pretest": "eslint --print-config index.js | eslint-config-prettier-check",
     "test": "tape index.test.js",
-    "posttest": "eslint ."
+    "posttest": "eslint *.js"
   },
   "devDependencies": {
     "eslint": "^4.19.0",
