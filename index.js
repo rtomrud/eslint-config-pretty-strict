@@ -219,18 +219,6 @@ module.exports = {
           "'for' is restricted from being used. Use a higher-order function instead."
       },
       {
-        selector:
-          ":matches(VariableDeclarator[init.type=Identifier][init.name=undefined], AssignmentExpression[right.type=Identifier][right.name=undefined], Property[value.type=Identifier][value.name=undefined])",
-        message:
-          "Unexpected use of 'undefined'. Assign 'null' or do not assign anything instead."
-      },
-      {
-        selector:
-          ":matches(ReturnStatement[argument.type=Identifier][argument.name=undefined], ArrowFunctionExpression[body.type=Identifier][body.name=undefined])",
-        message:
-          "Unexpected use of 'undefined'. Return implicitly or use 'return;' instead."
-      },
-      {
         selector: "BinaryExpression[operator=instanceof][right.name=Array]",
         message:
           "'instanceof' is restricted from being used. Use 'Array.isArray' instead."
