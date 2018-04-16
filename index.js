@@ -198,7 +198,6 @@ module.exports = {
     "no-lonely-if": "error",
     "no-multi-assign": "error",
     "no-negated-condition": "error",
-    "no-nested-ternary": "error",
     "no-new-object": "error",
     "no-plusplus": "error",
     "no-restricted-syntax": [
