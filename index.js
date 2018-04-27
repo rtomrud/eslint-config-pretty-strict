@@ -5,10 +5,10 @@ const printWidth = 80;
 const tabWidth = 2;
 
 // Complexity limits that point at code smells, MUST be set to "warn"
-const MAX_DEPTH = 2;
-const MAX_NESTED_CALLBACKS = MAX_DEPTH;
-const MAX_PARAMS = 4;
-const MAX_LINES = 999;
+const maxDepth = 2;
+const maxNestedCallbacks = maxDepth;
+const maxParams = 4;
+const maxLines = 999;
 
 module.exports = {
   plugins: ["prettier"],
@@ -173,7 +173,7 @@ module.exports = {
       }
     ],
     "lines-between-class-members": "error",
-    "max-depth": ["warn", MAX_DEPTH],
+    "max-depth": ["warn", maxDepth],
     "max-len": [
       "error",
       {
@@ -185,9 +185,9 @@ module.exports = {
         ignoreRegExpLiterals: true
       }
     ],
-    "max-lines": ["warn", MAX_LINES],
-    "max-nested-callbacks": ["warn", MAX_NESTED_CALLBACKS],
-    "max-params": ["warn", MAX_PARAMS],
+    "max-lines": ["warn", maxLines],
+    "max-nested-callbacks": ["warn", maxNestedCallbacks],
+    "max-params": ["warn", maxParams],
     "max-statements-per-line": "error",
     "multiline-comment-style": "error",
     "new-cap": ["error", { capIsNew: false }],
