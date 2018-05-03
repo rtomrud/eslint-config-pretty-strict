@@ -25,23 +25,21 @@ npm install --save-dev eslint-config-pretty-strict eslint eslint-plugin-prettier
 npm install --save-dev --save-exact prettier # Prettier's patches have breaking changes
 ```
 
-Add an `"eslintConfig"` property to your `package.json` file and extend [eslint-config-pretty-strict](./index.js):
+Add an `"eslintConfig"` property to your `package.json` and add [eslint-config-pretty-strict](./index.js) to the `"extends"` array:
 
 ```json
 {
-  "eslintConfig": {
-    "extends": [
-      "./node_modules/eslint-config-pretty-strict/index.js"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 2015
-    },
-    "root": true
-  }
+  "extends": [
+    "./node_modules/eslint-config-pretty-strict/index.js"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2015
+  },
+  "root": true
 }
 ```
 
-Alternatively, use an [.eslintrc.\* configuration file](https://eslint.org/docs/user-guide/configuring#using-configuration-files).
+Alternatively, use an [.eslintrc.\* configuration file](https://eslint.org/docs/user-guide/configuring#using-configuration-files) instead of the `"eslintConfig"` property of the `package.json`.
 
 ## Using
 
