@@ -10,7 +10,7 @@ A strict [ESLint](https://eslint.org) config with [Prettier](https://prettier.io
 
 Code style must be consistent. Code should be unsurprising. The readers need to be able to trust that the structures and patterns they have seen in one source file will mean the same thing in others, because a code base with an inconsistent style taxes the reader with additional cognitive load.
 
-Forcing every contributor to read and comply with a style guide isn't an ideal solution, as the rules may be hard to interiorize. This leads to overlooked or unenforced rules. Then code reviews catch style errors and time is wasted with nitpicks, which is why style rules should be automatically enforced.
+Forcing every contributor to read and comply with a style guide is not an ideal solution, as the rules may be hard to interiorize. This leads to overlooked or unenforced rules. Then code reviews catch style errors and time is wasted with nitpicks, which is why style rules should be automatically enforced.
 
 This opinionated linter config provides strictly configured [ESLint](https://eslint.org/docs/about/) rules to [prevent errors](#1-ban-error-prone-code) and enforce [best](#2-dont-repeat-yourself) [practices](#3-do-one-thing). It also [automatically formats code](#4-automate-formatting) through [Prettier](https://prettier.io/docs/en/index.html) and [fixable ESLint rules](https://eslint.org/docs/user-guide/command-line-interface#--fix) to ensure consistent formatting.
 
@@ -90,12 +90,12 @@ const foo = object.hasOwnProperty(key);
 // ✓ ok, explicitely specifies the radix
 const foo = parseInt("042", 10);
 
-// ✗ bad, in pre-ES5 engines it is parsed as an octal if there's a leading 0
+// ✗ bad, in pre-ES5 engines it is parsed as an octal if there is a leading 0
 const foo = parseInt("042");
 ```
 
 ```js
-// ✓ ok, doesn't extend native types
+// ✓ ok, does not extend native types
 const count = condition => array =>
   array.reduce((count, item) => count + (condition(item) ? 1 : 0), 0);
 
@@ -187,7 +187,7 @@ Use [Prettier](https://prettier.io/) to automatically format the code in a consi
 
 > Formatting is a computer's job.—Kent Beck
 
-This config enables [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) so that ESLint reports the formatting problems detected by Prettier and lets you fix them with its `--fix` option. That way you don't have to worry about running both ESLint _and_ Prettier, you only have to run ESLint and it will handle both linting and formatting.
+This config enables [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) so that ESLint reports the formatting problems detected by Prettier and lets you fix them with its `--fix` option. That way you do not have to worry about running both ESLint _and_ Prettier, you only have to run ESLint and it will handle both linting and formatting.
 
 The rules of this config are set up not to conflict with Prettier in any way.
 
