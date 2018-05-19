@@ -6,7 +6,7 @@ const tabWidth = 2;
 
 // Complexity limits that point at code smells, MUST be set to "warn"
 const maxDepth = 2;
-const maxNestedCallbacks = maxDepth;
+const maxNestedCallbacks = maxDepth + 1;
 const maxParams = 4;
 const maxLines = 999;
 
