@@ -12,6 +12,8 @@ Code style must be consistent. Code should be unsurprising. The readers need to 
 
 Forcing every contributor to read and comply with a style guide is not an ideal solution, as the rules may be hard to interiorize. This leads to overlooked or unenforced rules. Then code reviews catch style errors and time is wasted with nitpicks, which is why style rules should be automatically enforced.
 
+> Any style guide written in English is either so brief that it’s ambiguous, or so long that no one reads it.—Bob Nystrom
+
 This opinionated linter config provides strictly configured [ESLint](https://eslint.org/docs/about/) rules to [prevent errors](#1-ban-error-prone-code) and enforce [best](#2-dont-repeat-yourself) [practices](#3-do-one-thing). It also [automatically formats code](#4-automate-formatting) through [Prettier](https://prettier.io/docs/en/index.html) and [fixable ESLint rules](https://eslint.org/docs/user-guide/command-line-interface#--fix) to ensure consistent formatting.
 
 This config is intended to be used with the latest version of ESLint and Prettier.
