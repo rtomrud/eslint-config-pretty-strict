@@ -55,6 +55,7 @@ module.exports = {
     "dot-notation": "error",
     eqeqeq: ["error", "always", { null: "ignore" }],
     "guard-for-in": "error",
+    "max-classes-per-file": "error",
     "no-alert": "error",
     "no-caller": "error",
     "no-case-declarations": "error",
