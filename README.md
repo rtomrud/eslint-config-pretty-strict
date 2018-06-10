@@ -16,7 +16,7 @@ Forcing every contributor to read and comply with a style guide is not an ideal 
 
 This opinionated linter config provides strictly configured [ESLint](https://eslint.org/docs/about/) rules to [prevent errors](#1-ban-error-prone-code) and enforce [best](#2-dont-repeat-yourself) [practices](#3-do-one-thing). It also [automatically formats code](#4-automate-formatting) through [Prettier](https://prettier.io/docs/en/index.html) and [fixable ESLint rules](https://eslint.org/docs/user-guide/command-line-interface#--fix) to ensure consistent formatting.
 
-This config is intended to be used with the latest version of ESLint and Prettier.
+This config is intended to be used with the latest stable version of ESLint and Prettier.
 
 ## Installing
 
