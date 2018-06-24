@@ -41,7 +41,7 @@ Add an `"eslintConfig"` property to your `package.json` and add [eslint-config-p
 }
 ```
 
-Alternatively, use an [.eslintrc.\* configuration file](https://eslint.org/docs/user-guide/configuring#using-configuration-files) instead of the `"eslintConfig"` property of the `package.json`.
+Alternatively, use an [.eslintrc.\* configuration file](https://eslint.org/docs/user-guide/configuring#using-configuration-files) instead of the `"eslintConfig"` property of `package.json`.
 
 ## Using
 
