@@ -193,11 +193,13 @@ This config enables [eslint-plugin-prettier](https://github.com/prettier/eslint-
 
 The rules of this config are set up not to conflict with Prettier in any way.
 
-## Configuring ESLint with your own rules
+## Customization
 
 > What if I don't agree with some rule?
 
 ESLint allows [granularly configuring](https://eslint.org/docs/user-guide/configuring) any setting. You can [configure it on a per-folder basis](https://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy), [extend configs](https://eslint.org/docs/user-guide/configuring#extending-configuration-files), and specify [parsers](https://eslint.org/docs/user-guide/configuring#specifying-parser-options), [environments](https://eslint.org/docs/user-guide/configuring#specifying-environments) or [rules](https://eslint.org/docs/user-guide/configuring#configuring-rules).
+
+Prettier allows customizing [some format options](https://prettier.io/docs/en/options.html) via a [configuration file](https://prettier.io/docs/en/configuration.html), much like ESLint. You can also configure those options through ESLint's `prettier/prettier` rule. For the generic format options, like indent size, you can even use an [`.editorconfig`](https://editorconfig.org/) file.
 
 You may want to [disable a rule with in-line comments](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments) when there is a legitimate use case for code reported by the linter.
 
