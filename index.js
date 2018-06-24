@@ -2,7 +2,7 @@
 
 // Prettier's defaults
 const printWidth = 80;
-const tabWidth = 2;
+const useTabs = false;
 
 // Complexity limits that point at code smells, MUST be set to "warn"
 const maxDepth = 2;
@@ -16,7 +16,7 @@ module.exports = {
 
   // MUST NOT use rules that conflict or are redundant with Prettier
   rules: {
-    "prettier/prettier": ["error", { printWidth, tabWidth }],
+    "prettier/prettier": ["error", { printWidth, useTabs }],
     "for-direction": "error",
     "getter-return": ["error", { allowImplicit: true }],
     "no-await-in-loop": "error",
@@ -180,7 +180,6 @@ module.exports = {
       "error",
       {
         code: printWidth,
-        tabWidth,
         ignoreUrls: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
@@ -235,6 +234,7 @@ module.exports = {
         message: "Unexpected use of ','. Use '{ }' instead."
       }
     ],
+    "no-tabs": useTabs ? "off" : "error",
     "no-underscore-dangle": "error",
     "no-unneeded-ternary": ["error", { defaultAssignment: false }],
     "one-var": ["error", "never"],

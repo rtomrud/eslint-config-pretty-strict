@@ -33,9 +33,22 @@ test("eslint-config-pretty-strict max-len with eslint-plugin-prettier", ({
   equal,
   end
 }) => {
-  const [, maxLen] = index.rules["max-len"];
-  const [, prettier] = index.rules["prettier/prettier"];
-  equal(maxLen.code, prettier.printWidth, "uses Prettier's printWidth");
-  equal(maxLen.tabWidth, prettier.tabWidth, "uses Prettier's tabWidth");
+  equal(
+    index.rules["max-len"][1].code,
+    index.rules["prettier/prettier"][1].printWidth,
+    "uses Prettier's printWidth"
+  );
+  end();
+});
+
+test("eslint-config-pretty-strict no-tabs with eslint-plugin-prettier", ({
+  equal,
+  end
+}) => {
+  equal(
+    index.rules["no-tabs"] === "error",
+    !index.rules["prettier/prettier"][1].useTabs,
+    "is turned on as an error when Prettier's useTabs is false"
+  );
   end();
 });
