@@ -67,11 +67,11 @@ Allowed code must be easily told apart from errors, so error-prone code that has
 > If a feature is sometimes useful and sometimes dangerous, and there is a better option, then always use the better option.—Douglas Crockford
 
 ```js
-// ✓ ok, true only if `foo` is 1
+// ✓ good, true only if `foo` is 1
 if (foo === 1) {
 }
 
-// ✓ ok, true if `foo` is 1 or "1"
+// ✓ good, true if `foo` is 1 or "1"
 if (Number(foo) === 1) {
 }
 
@@ -81,7 +81,7 @@ if (foo == 1) {
 ```
 
 ```js
-// ✓ ok, delegates the method call to the `Object` prototype
+// ✓ good, delegates the method call to the `Object` prototype
 const foo = Object.prototype.hasOwnProperty.call(object, key);
 
 // ✗ bad, may be shadowed, or the object may come from `Object.create(null)`
@@ -89,7 +89,7 @@ const foo = object.hasOwnProperty(key);
 ```
 
 ```js
-// ✓ ok, explicitely specifies the radix
+// ✓ good, explicitely specifies the radix
 const foo = parseInt("042", 10);
 
 // ✗ bad, in pre-ES5 engines it is parsed as an octal if there is a leading 0
@@ -97,7 +97,7 @@ const foo = parseInt("042");
 ```
 
 ```js
-// ✓ ok, does not extend native types
+// ✓ good, does not extend native types
 const count = condition => array =>
   array.reduce((count, item) => count + (condition(item) ? 1 : 0), 0);
 
@@ -112,7 +112,7 @@ Array.prototype.count = function(condition) {
 Use syntax that minimizes duplication. It reduces visual clutter and makes refactoring easier.
 
 ```js
-// ✓ ok
+// ✓ good
 const { firstName, lastName } = user;
 
 // ✗ bad
@@ -121,7 +121,7 @@ const lastName = user.lastName;
 ```
 
 ```js
-// ✓ ok
+// ✓ good
 const [first, second] = users;
 
 // ✗ bad
@@ -130,7 +130,7 @@ const second = users[1];
 ```
 
 ```js
-// ✓ ok
+// ✓ good
 return {
   firstName,
   lastName
@@ -144,7 +144,7 @@ return {
 ```
 
 ```js
-// ✓ ok
+// ✓ good
 const foo = bar || baz;
 
 // ✗ bad
@@ -156,7 +156,7 @@ const foo = bar ? bar : baz;
 Do it only, per line of code. Statements, expressions, clauses or chained calls should go on their own lines. It speeds-up reading, scanning and refactoring. It makes typos stand out. It makes diffs clearer, by preventing punctuation-only diffs. And it simplifies using a debugger: you can set breakpoints more granularly, and step through things one by one instead of jumping through all at once.
 
 ```js
-// ✓ ok
+// ✓ good
 let foo = 0;
 let bar = 0;
 let baz = 0;
@@ -174,7 +174,7 @@ let foo = (bar = baz = 0);
 ```
 
 ```js
-// ✓ ok
+// ✓ good
 if (foo) {
   bar();
 }
