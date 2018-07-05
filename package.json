@@ -37,13 +37,13 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.1",
     "husky": "^1.0.0-rc.9",
-    "prettier": "1.13.5",
+    "prettier": "1.13.7",
     "tape": "^4.9.1"
   },
   "peerDependencies": {
     "eslint": "^5.1.0",
     "eslint-plugin-prettier": "^2.6.1",
-    "prettier": "^1.13.5"
+    "prettier": "^1.13.7"
   },
   "engines": {
     "node": "6 || 8 || 9 || >=10"
