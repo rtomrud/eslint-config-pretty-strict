@@ -4,7 +4,7 @@
 const printWidth = 80;
 const useTabs = false;
 
-// Complexity limits that point at code smells, MUST be set to "warn"
+// Complexity limits that point at code smells
 const maxDepth = 3;
 const maxNestedCallbacks = maxDepth + 1;
 const maxParams = 4;
@@ -174,7 +174,7 @@ module.exports = {
       }
     ],
     "lines-between-class-members": "error",
-    "max-depth": ["warn", maxDepth],
+    "max-depth": ["error", maxDepth],
     "max-len": [
       "error",
       {
@@ -185,10 +185,10 @@ module.exports = {
         ignoreRegExpLiterals: true
       }
     ],
-    "max-lines": ["warn", maxLines],
-    "max-lines-per-function": ["warn", maxLinesPerFunction],
-    "max-nested-callbacks": ["warn", maxNestedCallbacks],
-    "max-params": ["warn", maxParams],
+    "max-lines": ["error", maxLines],
+    "max-lines-per-function": ["error", maxLinesPerFunction],
+    "max-nested-callbacks": ["error", maxNestedCallbacks],
+    "max-params": ["error", maxParams],
     "max-statements-per-line": "error",
     "multiline-comment-style": "error",
     "new-cap": ["error", { capIsNew: false }],
