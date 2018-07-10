@@ -5,7 +5,7 @@ const printWidth = 80;
 const useTabs = false;
 
 // Complexity limits that point at code smells, MUST be set to "warn"
-const maxDepth = 2;
+const maxDepth = 3;
 const maxNestedCallbacks = maxDepth + 1;
 const maxParams = 4;
 const maxLines = 999;
