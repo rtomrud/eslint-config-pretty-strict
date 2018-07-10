@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-pretty-strict",
-  "version": "1.0.0-rc.9",
+  "version": "1.0.0-rc.10",
   "description": "A strict ESLint config with Prettier as a code formatter",
   "keywords": [
     "config",
