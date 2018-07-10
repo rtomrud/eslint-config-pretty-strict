@@ -1,7 +1,7 @@
 # eslint-config-pretty-strict
 
 [![npm version](https://img.shields.io/npm/v/eslint-config-pretty-strict.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-pretty-strict)
-[![Build Status](https://img.shields.io/travis/rtomrud/eslint-config-pretty-strict/master.svg?style=flat-square)](https://travis-ci.org/rtomrud/eslint-config-pretty-strict)
+[![Build Status](https://travis-ci.com/rtomrud/eslint-config-pretty-strict.svg?branch=master)](https://travis-ci.com/rtomrud/eslint-config-pretty-strict)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 A strict [ESLint](https://eslint.org) config with [Prettier](https://prettier.io/) as a code formatter
