@@ -10,7 +10,6 @@
     "lint",
     "prettier",
     "pretty",
-    "strict",
     "style"
   ],
   "homepage": "https://github.com/rtomrud/eslint-config-pretty-strict#readme",
