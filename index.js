@@ -52,7 +52,7 @@ module.exports = {
     "class-methods-use-this": "error",
     "consistent-return": "error",
     curly: ["error", "all"],
-    "default-case": "error",
+    "default-case": ["error", { commentPattern: ".^" }],
     "dot-notation": ["error", { allowKeywords: true }],
     eqeqeq: ["error", "always", { null: "ignore" }],
     "guard-for-in": "error",
