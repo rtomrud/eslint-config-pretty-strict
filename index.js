@@ -145,6 +145,7 @@ module.exports = {
     "no-with": "error",
     "prefer-promise-reject-errors": "error",
     radix: ["error", "always"],
+    "require-unicode-regexp": "error",
     "vars-on-top": "error",
     yoda: ["error", "never"],
     strict: ["error", "safe"],
