@@ -36,6 +36,7 @@ module.exports = {
     "no-inner-declarations": ["error", "functions"],
     "no-invalid-regexp": "error",
     "no-irregular-whitespace": ["error", { skipStrings: true }],
+    "no-misleading-character-class": "error",
     "no-obj-calls": "error",
     "no-prototype-builtins": "error",
     "no-regex-spaces": "error",
