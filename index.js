@@ -19,6 +19,7 @@ module.exports = {
     "prettier/prettier": ["error", { printWidth, useTabs }],
     "for-direction": "error",
     "getter-return": ["error", { allowImplicit: true }],
+    "no-async-promise-executor": "error",
     "no-await-in-loop": "error",
     "no-compare-neg-zero": "error",
     "no-cond-assign": ["error", "always"],
