@@ -133,6 +133,7 @@ module.exports = {
     "no-script-url": "error",
     "no-self-assign": ["error", { props: true }],
     "no-self-compare": "error",
+    "no-sequences": "error",
     "no-throw-literal": "error",
     "no-unmodified-loop-condition": "error",
     "no-unused-expressions": "error",
@@ -248,10 +249,6 @@ module.exports = {
         selector: "BinaryExpression[operator=instanceof][right.name!=Array]",
         message:
           "'instanceof' is restricted from being used. Use 'Object.prototype.isPrototypeOf' instead."
-      },
-      {
-        selector: "SequenceExpression",
-        message: "Unexpected use of ','. Use '{ }' instead."
       }
     ],
     "no-tabs": useTabs ? "off" : "error",
