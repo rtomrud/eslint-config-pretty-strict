@@ -212,7 +212,6 @@ module.exports = {
     "max-nested-callbacks": ["error", maxNestedCallbacks],
     "max-params": ["error", maxParams],
     "max-statements-per-line": ["error", { max: 1 }],
-    "multiline-comment-style": ["error", "starred-block"],
     "new-cap": ["error", { newIsCap: true, capIsNew: false, properties: true }],
     "no-array-constructor": "error",
     "no-bitwise": "error",
