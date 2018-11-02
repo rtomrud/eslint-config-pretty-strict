@@ -4,7 +4,6 @@
 const maxDepth = 3;
 const maxNestedCallbacks = maxDepth + 1;
 const maxParams = 4;
-const maxLines = 999;
 const maxLinesPerFunction = 48;
 
 module.exports = {
@@ -204,7 +203,6 @@ module.exports = {
         ignoreRegExpLiterals: true
       }
     ],
-    "max-lines": ["error", maxLines],
     "max-lines-per-function": ["error", maxLinesPerFunction],
     "max-nested-callbacks": ["error", maxNestedCallbacks],
     "max-params": ["error", maxParams],
