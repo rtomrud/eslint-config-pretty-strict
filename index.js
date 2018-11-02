@@ -180,7 +180,6 @@ module.exports = {
       "error",
       {
         beforeBlockComment: true,
-        beforeLineComment: true,
 
         // MUST be `true` to work with Prettier
         allowBlockStart: true,
