@@ -14,7 +14,7 @@ const maxLinesPerFunction = 48;
 module.exports = {
   plugins: ["prettier"],
 
-  // MUST NOT use rules that conflict or are redundant with Prettier
+  // MUST NOT use rules that conflict or overlap with Prettier
   rules: {
     "prettier/prettier": ["error", { printWidth, useTabs }],
     "for-direction": "error",
