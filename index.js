@@ -2,7 +2,6 @@
 
 // Prettier's defaults
 const printWidth = 80;
-const useTabs = false;
 
 // Complexity limits that point at code smells
 const maxDepth = 3;
@@ -16,7 +15,7 @@ module.exports = {
 
   // MUST NOT use rules that conflict or overlap with Prettier
   rules: {
-    "prettier/prettier": ["error", { printWidth, useTabs }],
+    "prettier/prettier": ["error", { printWidth }],
     "for-direction": "error",
     "getter-return": ["error", { allowImplicit: true }],
     "no-async-promise-executor": "error",
@@ -249,7 +248,7 @@ module.exports = {
           "'instanceof' is restricted from being used. Use 'Object.prototype.isPrototypeOf' instead."
       }
     ],
-    "no-tabs": useTabs ? "off" : "error",
+    "no-tabs": ["error", { allowIndentationTabs: true }],
     "no-underscore-dangle": "error",
     "no-unneeded-ternary": ["error", { defaultAssignment: false }],
     "one-var": ["error", "never"],

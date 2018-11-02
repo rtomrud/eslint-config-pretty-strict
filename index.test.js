@@ -40,15 +40,3 @@ test("eslint-config-pretty-strict max-len with eslint-plugin-prettier", ({
   );
   end();
 });
-
-test("eslint-config-pretty-strict no-tabs with eslint-plugin-prettier", ({
-  equal,
-  end
-}) => {
-  equal(
-    index.rules["no-tabs"] === "error",
-    !index.rules["prettier/prettier"][1].useTabs,
-    "is turned on as an error when prettier/prettier's useTabs option is false"
-  );
-  end();
-});
