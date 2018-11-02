@@ -45,7 +45,7 @@
     "prettier": "^1.14.3"
   },
   "engines": {
-    "node": "6 || 8 || >=10"
+    "node": "6 || 8 || 10 || 11"
   },
   "eslintConfig": {
     "env": {
