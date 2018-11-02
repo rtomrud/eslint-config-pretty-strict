@@ -1,8 +1,5 @@
 "use strict";
 
-// Prettier's defaults
-const printWidth = 80;
-
 // Complexity limits that point at code smells
 const maxDepth = 3;
 const maxNestedCallbacks = maxDepth + 1;
@@ -15,7 +12,7 @@ module.exports = {
 
   // MUST NOT use rules that conflict or overlap with Prettier
   rules: {
-    "prettier/prettier": ["error", { printWidth }],
+    "prettier/prettier": "error",
     "for-direction": "error",
     "getter-return": ["error", { allowImplicit: true }],
     "no-async-promise-executor": "error",
@@ -198,7 +195,9 @@ module.exports = {
     "max-len": [
       "error",
       {
-        code: printWidth,
+        // MUST match Prettier's --print-width option, 80 by default
+        code: 80,
+
         ignoreUrls: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,

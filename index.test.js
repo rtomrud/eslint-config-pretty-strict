@@ -22,7 +22,7 @@ test("eslint-config-pretty-strict with eslint-plugin-prettier", ({
     "uses eslint-plugin-prettier"
   );
   equal(
-    index.rules["prettier/prettier"][0],
+    index.rules["prettier/prettier"],
     "error",
     "turns on prettier/prettier rule as an error"
   );
@@ -35,8 +35,8 @@ test("eslint-config-pretty-strict max-len with eslint-plugin-prettier", ({
 }) => {
   equal(
     index.rules["max-len"][1].code,
-    index.rules["prettier/prettier"][1].printWidth,
-    "uses prettier/prettier's printWidth option"
+    80,
+    "max-len matches the default value of prettier's --print-width option"
   );
   end();
 });
