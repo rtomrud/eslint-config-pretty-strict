@@ -4,7 +4,6 @@
 const maxDepth = 3;
 const maxNestedCallbacks = maxDepth + 1;
 const maxParams = 4;
-const maxLinesPerFunction = 48;
 
 module.exports = {
   plugins: ["prettier"],
@@ -203,7 +202,6 @@ module.exports = {
         ignoreRegExpLiterals: true
       }
     ],
-    "max-lines-per-function": ["error", maxLinesPerFunction],
     "max-nested-callbacks": ["error", maxNestedCallbacks],
     "max-params": ["error", maxParams],
     "max-statements-per-line": ["error", { max: 1 }],
