@@ -2,7 +2,6 @@
 
 // Complexity limits that point at code smells
 const maxDepth = 3;
-const maxParams = 4;
 
 module.exports = {
   plugins: ["prettier"],
@@ -201,7 +200,6 @@ module.exports = {
         ignoreRegExpLiterals: true
       }
     ],
-    "max-params": ["error", maxParams],
     "max-statements-per-line": ["error", { max: 1 }],
     "new-cap": ["error", { newIsCap: true, capIsNew: false, properties: true }],
     "no-array-constructor": "error",
