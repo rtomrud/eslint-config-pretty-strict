@@ -1,8 +1,5 @@
 "use strict";
 
-// Complexity limits that point at code smells
-const maxDepth = 3;
-
 module.exports = {
   plugins: ["prettier"],
 
@@ -187,7 +184,6 @@ module.exports = {
       }
     ],
     "lines-between-class-members": ["error", "always"],
-    "max-depth": ["error", maxDepth],
     "max-len": [
       "error",
       {
