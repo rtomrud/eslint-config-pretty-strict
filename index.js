@@ -2,7 +2,6 @@
 
 // Complexity limits that point at code smells
 const maxDepth = 3;
-const maxNestedCallbacks = maxDepth + 1;
 const maxParams = 4;
 
 module.exports = {
@@ -202,7 +201,6 @@ module.exports = {
         ignoreRegExpLiterals: true
       }
     ],
-    "max-nested-callbacks": ["error", maxNestedCallbacks],
     "max-params": ["error", maxParams],
     "max-statements-per-line": ["error", { max: 1 }],
     "new-cap": ["error", { newIsCap: true, capIsNew: false, properties: true }],
