@@ -31,5 +31,10 @@ test("eslint-config-pretty-strict with eslint-plugin-prettier", ({
     80,
     "max-len matches the default value of prettier's --print-width option"
   );
+  equal(
+    index.rules["no-tabs"][1].allowIndentationTabs,
+    true,
+    "no-tabs avoids conflicts with prettier's --use-tabs"
+  );
   end();
 });
