@@ -17,22 +17,15 @@ test("eslint-config-pretty-strict with eslint-plugin-prettier", ({
   end
 }) => {
   equal(
-    Array.isArray(index.plugins) && index.plugins.indexOf("prettier") !== -1,
+    Array.isArray(index.plugins) && index.plugins.includes("prettier"),
     true,
     "uses eslint-plugin-prettier"
   );
   equal(
     index.rules["prettier/prettier"],
     "error",
-    "turns on prettier/prettier rule as an error"
+    "turns on prettier/prettier rule as an error with default config"
   );
-  end();
-});
-
-test("eslint-config-pretty-strict max-len with eslint-plugin-prettier", ({
-  equal,
-  end
-}) => {
   equal(
     index.rules["max-len"][1].code,
     80,
