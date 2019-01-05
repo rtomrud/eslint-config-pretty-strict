@@ -261,8 +261,8 @@ module.exports = {
         prev: ["*"],
         next: ["import", "export", "class", "function"]
       },
-      { blankLine: "any", prev: ["directive"], next: ["directive"] },
-      { blankLine: "any", prev: ["import"], next: ["import"] },
+      { blankLine: "never", prev: ["directive"], next: ["directive"] },
+      { blankLine: "never", prev: ["import"], next: ["import"] },
       { blankLine: "any", prev: ["export"], next: ["export"] }
     ],
     "prefer-object-spread": "error",
