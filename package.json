@@ -29,7 +29,7 @@
   "scripts": {
     "pretest": "eslint --print-config index.js | eslint-config-prettier-check",
     "test": "tape index.test.js",
-    "posttest": "eslint *.js"
+    "lint": "eslint *.js"
   },
   "devDependencies": {
     "eslint": "^5.12.0",
@@ -61,7 +61,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": "npm test && npm run lint"
     }
   }
 }
