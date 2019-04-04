@@ -211,21 +211,6 @@ module.exports = {
     "no-restricted-syntax": [
       "error",
       {
-        selector: "ForInStatement",
-        message:
-          "'for in' is restricted from being used. Use a higher-order function instead."
-      },
-      {
-        selector: "ForOfStatement",
-        message:
-          "'for of' is restricted from being used. Use a higher-order function instead."
-      },
-      {
-        selector: "ForStatement",
-        message:
-          "'for' is restricted from being used. Use a higher-order function instead."
-      },
-      {
         selector: "BinaryExpression[operator=instanceof][right.name=Array]",
         message:
           "'instanceof' is restricted from being used. Use 'Array.isArray' instead."
