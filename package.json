@@ -27,9 +27,10 @@
     "url": "https://github.com/rtomrud/eslint-config-pretty-strict.git"
   },
   "scripts": {
+    "lint": "eslint *.js",
     "pretest": "eslint --print-config index.js | eslint-config-prettier-check",
     "test": "tape index.test.js",
-    "lint": "eslint *.js"
+    "posttest": "npm run lint"
   },
   "devDependencies": {
     "eslint": "5.16.0",
@@ -61,7 +62,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test && npm run lint"
+      "pre-commit": "npm test"
     }
   }
 }
