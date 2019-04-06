@@ -140,7 +140,6 @@ module.exports = {
     "vars-on-top": "error",
     yoda: ["error", "never"],
     strict: ["error", "safe"],
-    "init-declarations": ["error", "always"],
     "no-delete-var": "error",
     "no-label-var": "error",
     "no-restricted-globals": [
