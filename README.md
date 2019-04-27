@@ -23,8 +23,7 @@ This config is intended to be used with the latest stable version of ESLint and 
 Install [eslint-config-pretty-strict](./) and its peer dependencies [eslint](https://github.com/eslint/eslint), [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) and [prettier](https://github.com/prettier/prettier):
 
 ```bash
-npm install --save-dev eslint-config-pretty-strict eslint eslint-plugin-prettier
-npm install --save-dev --save-exact prettier # Prettier's patches have breaking changes
+npm install --save-dev --save-exact eslint-config-pretty-strict eslint eslint-plugin-prettier prettier
 ```
 
 Add an `"eslintConfig"` property to your `package.json` and add [eslint-config-pretty-strict](./index.js) to the `"extends"` array:
