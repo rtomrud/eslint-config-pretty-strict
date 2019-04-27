@@ -27,7 +27,7 @@
     "url": "https://github.com/rtomrud/eslint-config-pretty-strict.git"
   },
   "scripts": {
-    "lint": "eslint *.js",
+    "lint": "eslint .",
     "pretest": "eslint --print-config index.js | eslint-config-prettier-check",
     "test": "tape index.test.js",
     "posttest": "npm run lint"
