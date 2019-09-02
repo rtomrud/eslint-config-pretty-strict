@@ -111,6 +111,11 @@ module.exports = {
         object: "self",
         property: "isFinite",
         message: "Use 'Number.isFinite' instead."
+      },
+      {
+        object: "Math",
+        property: "pow",
+        message: "Use the '**' operator instead."
       }
     ],
     "no-return-assign": ["error", "always"],
