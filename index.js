@@ -132,7 +132,6 @@ module.exports = {
     "no-with": "error",
     "prefer-promise-reject-errors": "error",
     radix: "error",
-    "require-unicode-regexp": "error",
     "vars-on-top": "error",
     yoda: "error",
     strict: "error",
