@@ -205,7 +205,6 @@ module.exports = {
       }
     ],
     "no-tabs": ["error", { allowIndentationTabs: true }],
-    "no-underscore-dangle": "error",
     "no-unneeded-ternary": ["error", { defaultAssignment: false }],
     "one-var": ["error", "never"],
     "operator-assignment": "error",
