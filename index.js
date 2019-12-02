@@ -55,6 +55,7 @@ module.exports = {
     "default-param-last": "error",
     "dot-notation": "error",
     eqeqeq: ["error", "always", { null: "ignore" }],
+    "no-constructor-return": "error",
     "guard-for-in": "error",
     "max-classes-per-file": "error",
     "no-alert": "error",
