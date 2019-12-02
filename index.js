@@ -35,7 +35,7 @@ module.exports = {
     "no-template-curly-in-string": "error",
     "no-unreachable": "error",
     "no-unsafe-finally": "error",
-    "no-unsafe-negation": "error",
+    "no-unsafe-negation": ["error", { enforceForOrderingRelations: true }],
     "require-atomic-updates": "error",
     "use-isnan": [
       "error",
