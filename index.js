@@ -122,11 +122,6 @@ module.exports = {
         object: "self",
         property: "isFinite",
         message: "Use 'Number.isFinite' instead."
-      },
-      {
-        object: "Math",
-        property: "pow",
-        message: "Use the '**' operator instead."
       }
     ],
     "no-return-assign": ["error", "always"],
@@ -250,6 +245,7 @@ module.exports = {
       { blankLine: "never", prev: ["import"], next: ["import"] },
       { blankLine: "any", prev: ["export"], next: ["export"] }
     ],
+    "prefer-exponentiation-operator": "error",
     "prefer-object-spread": "error",
     "spaced-comment": ["error", "always", { block: { balanced: true } }],
     "constructor-super": "error",
