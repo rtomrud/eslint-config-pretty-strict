@@ -39,7 +39,10 @@ module.exports = {
     "require-atomic-updates": "error",
     "use-isnan": "error",
     "valid-typeof": ["error", { requireStringLiterals: true }],
-    "accessor-pairs": "error",
+    "accessor-pairs": [
+      "error",
+      { setWithoutGet: true, enforceForClassMembers: true }
+    ],
     "array-callback-return": ["error", { allowImplicit: true }],
     "block-scoped-var": "error",
     "class-methods-use-this": "error",
