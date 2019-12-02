@@ -255,7 +255,7 @@ module.exports = {
     "no-duplicate-imports": ["error", { includeExports: true }],
     "no-new-symbol": "error",
     "no-this-before-super": "error",
-    "no-useless-computed-key": "error",
+    "no-useless-computed-key": ["error", { enforceForClassMembers: true }],
     "no-useless-constructor": "error",
     "no-useless-rename": "error",
     "no-var": "error",
