@@ -137,6 +137,7 @@ module.exports = {
     "no-void": "error",
     "no-with": "error",
     "prefer-promise-reject-errors": "error",
+    "prefer-regex-literals": "error",
     radix: "error",
     "vars-on-top": "error",
     yoda: "error",
