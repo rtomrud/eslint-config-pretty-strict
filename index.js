@@ -164,7 +164,10 @@ module.exports = {
     "no-undef-init": "error",
     "no-unused-vars": ["error", { ignoreRestSiblings: true }],
     "no-use-before-define": "error",
-    camelcase: ["error", { properties: "never", ignoreDestructuring: true }],
+    camelcase: [
+      "error",
+      { properties: "never", ignoreDestructuring: true, ignoreImports: true }
+    ],
     "func-style": "error",
     "lines-around-comment": [
       "error",
