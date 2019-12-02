@@ -35,14 +35,14 @@
   "devDependencies": {
     "eslint": "6.7.2",
     "eslint-config-prettier": "6.1.0",
-    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-prettier": "3.1.1",
     "husky": "3.0.5",
     "prettier": "1.19.1",
     "tape": "4.11.0"
   },
   "peerDependencies": {
     "eslint": "^6.7.2",
-    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "prettier": "^1.19.1"
   },
   "engines": {
