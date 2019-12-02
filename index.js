@@ -46,6 +46,7 @@ module.exports = {
     "consistent-return": "error",
     curly: "error",
     "default-case": ["error", { commentPattern: ".^" }],
+    "default-param-last": "error",
     "dot-notation": "error",
     eqeqeq: ["error", "always", { null: "ignore" }],
     "guard-for-in": "error",
