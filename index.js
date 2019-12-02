@@ -37,7 +37,7 @@ module.exports = {
     "no-unsafe-finally": "error",
     "no-unsafe-negation": "error",
     "require-atomic-updates": "error",
-    "use-isnan": "error",
+    "use-isnan": ["error", { enforceForSwitchCase: true }],
     "valid-typeof": ["error", { requireStringLiterals: true }],
     "accessor-pairs": [
       "error",
