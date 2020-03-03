@@ -22,7 +22,7 @@ module.exports = {
     "no-empty": "error",
     "no-empty-character-class": "error",
     "no-ex-assign": "error",
-    "no-extra-boolean-cast": "error",
+    "no-extra-boolean-cast": ["error", { enforceForLogicalOperands: true }],
     "no-func-assign": "error",
     "no-import-assign": "error",
     "no-inner-declarations": "error",
