@@ -14,7 +14,7 @@ test("eslint-config-pretty-strict with eslint", ({ doesNotThrow, end }) => {
 
 test("eslint-config-pretty-strict with eslint-plugin-prettier", ({
   equal,
-  end
+  end,
 }) => {
   equal(
     Array.isArray(index.plugins) && index.plugins.includes("prettier"),

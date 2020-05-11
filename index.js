@@ -41,12 +41,12 @@ module.exports = {
     "require-atomic-updates": "error",
     "use-isnan": [
       "error",
-      { enforceForSwitchCase: true, enforceForIndexOf: true }
+      { enforceForSwitchCase: true, enforceForIndexOf: true },
     ],
     "valid-typeof": ["error", { requireStringLiterals: true }],
     "accessor-pairs": [
       "error",
-      { setWithoutGet: true, enforceForClassMembers: true }
+      { setWithoutGet: true, enforceForClassMembers: true },
     ],
     "array-callback-return": ["error", { allowImplicit: true }],
     "block-scoped-var": "error",
@@ -67,7 +67,7 @@ module.exports = {
     "no-else-return": ["error", { allowElseIf: false }],
     "no-empty-function": [
       "error",
-      { allow: ["functions", "arrowFunctions", "methods"] }
+      { allow: ["functions", "arrowFunctions", "methods"] },
     ],
     "no-empty-pattern": "error",
     "no-eval": "error",
@@ -97,33 +97,33 @@ module.exports = {
       {
         object: "global",
         property: "isNaN",
-        message: "Use 'Number.isNaN' instead."
+        message: "Use 'Number.isNaN' instead.",
       },
       {
         object: "window",
         property: "isNaN",
-        message: "Use 'Number.isNaN' instead."
+        message: "Use 'Number.isNaN' instead.",
       },
       {
         object: "self",
         property: "isNaN",
-        message: "Use 'Number.isNaN' instead."
+        message: "Use 'Number.isNaN' instead.",
       },
       {
         object: "global",
         property: "isFinite",
-        message: "Use 'Number.isFinite' instead."
+        message: "Use 'Number.isFinite' instead.",
       },
       {
         object: "window",
         property: "isFinite",
-        message: "Use 'Number.isFinite' instead."
+        message: "Use 'Number.isFinite' instead.",
       },
       {
         object: "self",
         property: "isFinite",
-        message: "Use 'Number.isFinite' instead."
-      }
+        message: "Use 'Number.isFinite' instead.",
+      },
     ],
     "no-return-assign": ["error", "always"],
     "no-return-await": "error",
@@ -153,7 +153,7 @@ module.exports = {
     "no-restricted-globals": [
       "error",
       { name: "isNaN", message: "Use 'Number.isNaN' instead." },
-      { name: "isFinite", message: "Use 'Number.isFinite' instead." }
+      { name: "isFinite", message: "Use 'Number.isFinite' instead." },
     ],
     "no-shadow-restricted-names": "error",
     "no-undef": "error",
@@ -163,7 +163,7 @@ module.exports = {
     "no-useless-backreference": "error",
     camelcase: [
       "error",
-      { properties: "never", ignoreDestructuring: true, ignoreImports: true }
+      { properties: "never", ignoreDestructuring: true, ignoreImports: true },
     ],
     "func-style": "error",
     "lines-around-comment": [
@@ -179,8 +179,8 @@ module.exports = {
         allowClassStart: true,
         allowClassEnd: true,
 
-        applyDefaultIgnorePatterns: false
-      }
+        applyDefaultIgnorePatterns: false,
+      },
     ],
     "lines-between-class-members": "error",
     "max-len": [
@@ -192,8 +192,8 @@ module.exports = {
         ignoreUrls: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
-        ignoreRegExpLiterals: true
-      }
+        ignoreRegExpLiterals: true,
+      },
     ],
     "max-statements-per-line": "error",
     "new-cap": ["error", { capIsNew: false }],
@@ -211,13 +211,13 @@ module.exports = {
       {
         selector: "BinaryExpression[operator=instanceof][right.name=Array]",
         message:
-          "'instanceof' is restricted from being used. Use 'Array.isArray' instead."
+          "'instanceof' is restricted from being used. Use 'Array.isArray' instead.",
       },
       {
         selector: "BinaryExpression[operator=instanceof][right.name!=Array]",
         message:
-          "'instanceof' is restricted from being used. Use 'Object.prototype.isPrototypeOf' instead."
-      }
+          "'instanceof' is restricted from being used. Use 'Object.prototype.isPrototypeOf' instead.",
+      },
     ],
     "no-tabs": ["error", { allowIndentationTabs: true }],
     "no-unneeded-ternary": ["error", { defaultAssignment: false }],
@@ -234,18 +234,18 @@ module.exports = {
           "class",
           "function",
           "block",
-          "block-like"
+          "block-like",
         ],
-        next: ["*"]
+        next: ["*"],
       },
       {
         blankLine: "always",
         prev: ["*"],
-        next: ["import", "export", "class", "function"]
+        next: ["import", "export", "class", "function"],
       },
       { blankLine: "never", prev: ["directive"], next: ["directive"] },
       { blankLine: "never", prev: ["import"], next: ["import"] },
-      { blankLine: "any", prev: ["export"], next: ["export"] }
+      { blankLine: "any", prev: ["export"], next: ["export"] },
     ],
     "prefer-exponentiation-operator": "error",
     "prefer-object-spread": "error",
@@ -269,6 +269,6 @@ module.exports = {
     "prefer-spread": "error",
     "prefer-template": "error",
     "require-yield": "error",
-    "symbol-description": "error"
-  }
+    "symbol-description": "error",
+  },
 };
