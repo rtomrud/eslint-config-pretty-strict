@@ -54,11 +54,11 @@ Run ESLint via the [command line interface](https://eslint.org/docs/user-guide/c
 
 Note that you may install an [ESLint plugin](https://eslint.org/docs/user-guide/integrations#editors) for your text editor, so that you can see and fix the style problems directly from your editor. You may also use a [Prettier plugin](https://prettier.io/docs/en/editors.html) to automatically format with a keyboard shortcut or on file save.
 
-## Customizing
+## Configuring
 
 > What if I don't agree with some rule?
 
-ESLint settings can be [granularly overridden](https://eslint.org/docs/user-guide/configuring), including [configs](https://eslint.org/docs/user-guide/configuring#extending-configuration-files), [rules](https://eslint.org/docs/user-guide/configuring#configuring-rules), [parsers](https://eslint.org/docs/user-guide/configuring#specifying-parser-options) and [environments](https://eslint.org/docs/user-guide/configuring#specifying-environments). Also, Prettier can be [configured](https://prettier.io/docs/en/options.html) via a [config file](https://prettier.io/docs/en/configuration.html) or the [eslint-plugin-prettier `"prettier/prettier"` rule](https://github.com/prettier/eslint-plugin-prettier#options).
+You can [granularly override](https://eslint.org/docs/user-guide/configuring) any ESLint setting or [rule](https://eslint.org/docs/user-guide/configuring#configuring-rules). Also, Prettier can be [configured](https://prettier.io/docs/en/options.html) via a [config file](https://prettier.io/docs/en/configuration.html) or the [eslint-plugin-prettier `"prettier/prettier"` rule](https://github.com/prettier/eslint-plugin-prettier#options).
 
 Sometimes, you may want to [disable a rule with in-line comments](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments) for a given file or line of code.
 
