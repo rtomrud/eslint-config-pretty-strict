@@ -1,6 +1,6 @@
 # eslint-config-pretty-strict
 
-[![npm version](https://flat.badgen.net/npm/v/eslint-config-pretty-strict)](https://www.npmjs.com/package/eslint-config-pretty-strict)
+[![npm version](https://badgen.net/npm/v/eslint-config-pretty-strict)](https://www.npmjs.com/package/eslint-config-pretty-strict)
 [![build status](https://github.com/rtomrud/eslint-config-pretty-strict/workflows/build/badge.svg)](https://github.com/rtomrud/eslint-config-pretty-strict/actions?query=branch%3Amaster+workflow%3Abuild)
 
 A strict [ESLint](https://eslint.org) config with [Prettier](https://prettier.io/) as a code formatter
