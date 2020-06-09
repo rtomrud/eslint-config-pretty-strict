@@ -192,7 +192,6 @@ module.exports = {
       },
     ],
     "max-statements-per-line": "error",
-    "new-cap": ["error", { capIsNew: false }],
     "no-array-constructor": "error",
     "no-bitwise": "error",
     "no-continue": "error",
