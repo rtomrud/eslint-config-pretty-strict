@@ -203,7 +203,6 @@ module.exports = {
     "no-inline-comments": "error",
     "no-lonely-if": "error",
     "no-multi-assign": "error",
-    "no-negated-condition": "error",
     "no-new-object": "error",
     "no-plusplus": "error",
     "no-restricted-syntax": [
