@@ -9,7 +9,7 @@ A strict [ESLint](https://eslint.org) config with [Prettier](https://prettier.io
 >
 > [—Bob Nystrom](http://journal.stuffwithstuff.com/2015/09/08/the-hardest-program-ive-ever-written/)
 
-Hence, this config provides opinionated [ESLint](https://eslint.org/docs/about/) rules to [prevent errors](https://eslint.org/docs/rules/#possible-errors), [enforce best practices](https://eslint.org/docs/rules/#best-practices) and [ensure a consistent style](https://eslint.org/docs/rules/#stylistic-issues). Though you may [customize](#customizing) it to your needs.
+Hence, this config provides opinionated [ESLint](https://eslint.org/docs/about/) rules to [prevent errors](https://eslint.org/docs/rules/#possible-errors), [enforce best practices](https://eslint.org/docs/rules/#best-practices) and [ensure a consistent style](https://eslint.org/docs/rules/#stylistic-issues). Though you may [configure](#configuring) it to your needs.
 
 > Formatting is a computer's job.
 >
