@@ -242,7 +242,6 @@ module.exports = {
     ],
     "prefer-exponentiation-operator": "error",
     "prefer-object-spread": "error",
-    "spaced-comment": ["error", "always", { block: { balanced: true } }],
     "constructor-super": "error",
     "no-class-assign": "error",
     "no-const-assign": "error",
