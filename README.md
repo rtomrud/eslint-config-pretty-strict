@@ -9,15 +9,15 @@ A strict [ESLint](https://eslint.org) config with [Prettier](https://prettier.io
 >
 > [—Bob Nystrom](http://journal.stuffwithstuff.com/2015/09/08/the-hardest-program-ive-ever-written/)
 
-Hence, this config provides opinionated ESLint rules to [prevent errors](https://eslint.org/docs/rules/#possible-errors), [enforce best practices](https://eslint.org/docs/rules/#best-practices) and [ensure a consistent style](https://eslint.org/docs/rules/#stylistic-issues). Though you may [configure](#configuring) it to your needs.
+This config provides reasonable ESLint rules to [prevent errors](https://eslint.org/docs/rules/#possible-errors), [enforce best practices](https://eslint.org/docs/rules/#best-practices) and [keep a consistent style](https://eslint.org/docs/rules/#stylistic-issues). Though you may [configure](#configuring) it to your needs.
 
 > Formatting is a computer's job.
 >
 > [—Kent Beck](https://twitter.com/KentBeck/status/877970657086066688)
 
-It also automatically formats code with [Prettier](https://prettier.io/docs/en/why-prettier.html) and [autofixable ESLint rules](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) to ensure consistent and legible formatting. The ESLint rules are carefully configured not to conflict with Prettier in any way.
+Also, it automates code formatting with [Prettier](https://prettier.io/docs/en/why-prettier.html) and [autofixable ESLint rules](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) to ensure consistent and legible formatting. The ESLint rules are carefully configured not to conflict with Prettier in any way.
 
-By using [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier), Prettier is seamlessly integrated with ESLint. You don't have to run these tools separately because ESLint reports the formatting problems detected by Prettier and lets you [automatically fix them with the `--fix` option](https://eslint.org/docs/user-guide/command-line-interface#fix).
+By using [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier), Prettier is seamlessly integrated with ESLint. So you don't have to run these tools separately because ESLint reports the formatting problems detected by Prettier and lets you [automatically fix them with its `--fix` option](https://eslint.org/docs/user-guide/command-line-interface#fix).
 
 ## Installing
 
