@@ -2,7 +2,7 @@
 
 const test = require("tape");
 const { ESLint } = require("eslint");
-const index = require("./index.js");
+const { plugins, rules } = require("./index.js");
 
 test("eslint-config-pretty-strict with eslint", ({ doesNotThrow, end }) => {
   doesNotThrow(
@@ -17,24 +17,24 @@ test("eslint-config-pretty-strict with eslint-plugin-prettier", ({
   end,
 }) => {
   equal(
-    Array.isArray(index.plugins) && index.plugins.includes("prettier"),
+    Array.isArray(plugins) && plugins.includes("prettier"),
     true,
-    "uses eslint-plugin-prettier"
+    "enables eslint-plugin-prettier"
   );
   equal(
-    index.rules["prettier/prettier"],
+    rules["prettier/prettier"],
     "error",
-    "turns on prettier/prettier rule as an error with default config"
+    "enables the prettier/prettier rule as an error"
   );
   equal(
-    index.rules["max-len"][1].code,
+    rules["max-len"][0] === "error" && rules["max-len"][1].code,
     80,
-    "max-len matches the default value of prettier's --print-width option"
+    "avoids conflicts with the default value of prettier's --print-width option"
   );
   equal(
-    index.rules["no-tabs"][1].allowIndentationTabs,
+    rules["no-tabs"][0] === "error" && rules["no-tabs"][1].allowIndentationTabs,
     true,
-    "no-tabs avoids conflicts with prettier's --use-tabs"
+    "avoids conflicts with prettier's --use-tabs option"
   );
   end();
 });
