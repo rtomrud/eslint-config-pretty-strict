@@ -1,13 +1,13 @@
 "use strict";
 
 const test = require("tape");
-const eslint = require("eslint");
+const { ESLint } = require("eslint");
 const index = require("./index.js");
 
 test("eslint-config-pretty-strict with eslint", ({ doesNotThrow, end }) => {
   doesNotThrow(
-    () => new eslint.CLIEngine({ configFile: "./index.js" }),
-    "is parsable and validated by eslint's CLIEngine"
+    () => new ESLint({ overrideConfigFile: "./index.js" }),
+    "is parsed and validated by eslint"
   );
   end();
 });
