@@ -61,6 +61,7 @@ module.exports = {
     "default-param-last": "error",
     "dot-notation": "error",
     eqeqeq: ["error", "always", { null: "ignore" }],
+    "grouped-accessor-pairs": "error",
     "no-constructor-return": "error",
     "guard-for-in": "error",
     "max-classes-per-file": "error",
