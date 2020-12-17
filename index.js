@@ -41,6 +41,7 @@ module.exports = {
     "no-unreachable-loop": "error",
     "no-unsafe-finally": "error",
     "no-unsafe-negation": ["error", { enforceForOrderingRelations: true }],
+    "no-unsafe-optional-chaining": "error",
     "require-atomic-updates": "error",
     "use-isnan": [
       "error",
