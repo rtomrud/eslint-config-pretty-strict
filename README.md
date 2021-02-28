@@ -58,9 +58,9 @@ You may want to install an [ESLint plugin](https://eslint.org/docs/user-guide/in
 
 > What if I don't agree with some rule?
 
-You can [granularly override](https://eslint.org/docs/user-guide/configuring) any ESLint setting or [rule](https://eslint.org/docs/user-guide/configuring#configuring-rules). Also, Prettier can be [configured](https://prettier.io/docs/en/options.html) via a [config file](https://prettier.io/docs/en/configuration.html) or the [eslint-plugin-prettier `"prettier/prettier"` rule](https://github.com/prettier/eslint-plugin-prettier#options).
+You can [configure any ESLint](https://eslint.org/docs/user-guide/configuring/) setting or [rule](https://eslint.org/docs/user-guide/configuring/rules). Also, Prettier can be [configured](https://prettier.io/docs/en/options.html) via a [configuration file](https://prettier.io/docs/en/configuration.html) or the [eslint-plugin-prettier `prettier/prettier` option](https://github.com/prettier/eslint-plugin-prettier#options).
 
-Sometimes, you may want to [disable a rule with in-line comments](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments) for a given file or line of code.
+Sometimes, you may want to disable a rule only on some file or line of code by [using configuration comments](https://eslint.org/docs/user-guide/configuring/rules#using-configuration-comments-1).
 
 ## License
 
