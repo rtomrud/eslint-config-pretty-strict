@@ -17,7 +17,7 @@ This config provides reasonable ESLint rules to [prevent errors](https://eslint.
 
 Also, it automates code formatting with [Prettier](https://prettier.io/docs/en/why-prettier.html) and [autofixable ESLint rules](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) to ensure consistent and legible formatting. The ESLint rules are carefully configured not to conflict with Prettier in any way.
 
-By using [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier), Prettier is seamlessly integrated with ESLint. So you don't have to run these tools separately because ESLint reports the formatting problems detected by Prettier and lets you [automatically fix them with its `--fix` option](https://eslint.org/docs/user-guide/command-line-interface#-fix).
+By using [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier), Prettier is seamlessly integrated with ESLint. So you don't have to run these tools separately because ESLint reports the formatting problems detected by Prettier and lets you [automatically fix them with the `--fix` option](https://eslint.org/docs/user-guide/command-line-interface#-fix).
 
 ## Installing
 
