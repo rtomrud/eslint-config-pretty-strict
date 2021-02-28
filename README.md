@@ -21,13 +21,13 @@ By using [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-pret
 
 ## Installing
 
-Install eslint-config-pretty-strict with its peer dependencies [eslint](https://github.com/eslint/eslint), [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) and [prettier](https://github.com/prettier/prettier):
+Install eslint-config-pretty-strict and its peer dependencies ([eslint](https://github.com/eslint/eslint), [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) and [prettier](https://github.com/prettier/prettier)):
 
 ```bash
 npm install --save-dev --save-exact eslint-config-pretty-strict eslint eslint-plugin-prettier prettier
 ```
 
-Then, in your `package.json` file, add an `"eslintConfig"` key with the following value:
+Then, add an `eslintConfig` field to your `package.json` file with the following value:
 
 ```json
 {
@@ -39,7 +39,7 @@ Then, in your `package.json` file, add an `"eslintConfig"` key with the followin
 }
 ```
 
-Alternatively, you may use an [.eslintrc.\* configuration file](https://eslint.org/docs/user-guide/configuring#configuration-file-formats) instead of the `"eslintConfig"` field in the `package.json` file.
+Or, you may use an [.eslintrc.\*](https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-file-formats) file instead of the `package.json` file.
 
 ## Using
 
