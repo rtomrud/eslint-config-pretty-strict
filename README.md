@@ -52,7 +52,7 @@ Run ESLint via the [command line interface](https://eslint.org/docs/user-guide/c
 ./node_modules/.bin/eslint . --fix
 ```
 
-Note that you may install an [ESLint plugin](https://eslint.org/docs/user-guide/integrations#editors) for your text editor, so that you can see and fix the style problems directly from your editor. You may also use a [Prettier plugin](https://prettier.io/docs/en/editors.html) to automatically format with a keyboard shortcut or on file save.
+You may want to install an [ESLint plugin](https://eslint.org/docs/user-guide/integrations#editors) for your text editor, so that you can see and fix style problems directly in your editor. You may also want to use a [Prettier plugin](https://prettier.io/docs/en/editors.html) to automatically format on file save or with a keyboard shortcut.
 
 ## Configuring
 
