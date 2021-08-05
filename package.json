@@ -29,7 +29,7 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "eslint-config-prettier index.js",
-    "test": "tape index.test.js",
+    "test": "jest",
     "posttest": "npm run lint"
   },
   "devDependencies": {
@@ -37,8 +37,8 @@
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-prettier": "3.3.0",
     "husky": "5.1.1",
-    "prettier": "2.2.1",
-    "tape": "5.2.1"
+    "jest": "27.0.6",
+    "prettier": "2.2.1"
   },
   "peerDependencies": {
     "eslint": "^7.15.0",
@@ -54,6 +54,17 @@
     },
     "extends": [
       "./index.js"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.test.js"
+        ],
+        "globals": {
+          "expect": true,
+          "test": true
+        }
+      }
     ],
     "parserOptions": {
       "ecmaVersion": 2020
