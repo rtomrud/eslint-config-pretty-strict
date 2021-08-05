@@ -1,0 +1,23 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "./index.js"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/*.test.js"
+      ],
+      "globals": {
+        "expect": true,
+        "test": true
+      }
+    }
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "root": true
+}
