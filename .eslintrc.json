@@ -7,13 +7,12 @@
   ],
   "overrides": [
     {
+      "extends": ["plugin:jest/recommended"],
       "files": [
-        "**/*.test.js"
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
       ],
-      "globals": {
-        "expect": true,
-        "test": true
-      }
+      "plugins": ["jest"]
     }
   ],
   "parserOptions": {
