@@ -38,6 +38,8 @@ Then, in your [.eslintrc](https://eslint.org/docs/user-guide/configuring/configu
 }
 ```
 
+_Note that you should also set the [`ecmaVersion` option](https://eslint.org/docs/user-guide/configuring/language-options#specifying-parser-options) according to the ECMAScript syntax you use, so that ESLint doesn't output a parsing error._
+
 ## Using
 
 Run ESLint via the [command line interface](https://eslint.org/docs/user-guide/command-line-interface) with:
