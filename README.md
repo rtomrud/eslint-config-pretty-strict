@@ -27,19 +27,16 @@ Install eslint-config-pretty-strict and its peer dependencies ([eslint](https://
 npm install --save-dev --save-exact eslint-config-pretty-strict eslint eslint-plugin-prettier prettier
 ```
 
-Then, add an `eslintConfig` field to your `package.json` file with the following value:
+Then, in your [.eslintrc](https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-file-formats) file, extend this config:
 
 ```json
 {
   "extends": ["eslint-config-pretty-strict"],
   "parserOptions": {
     "ecmaVersion": 2020
-  },
-  "root": true
+  }
 }
 ```
-
-Or, you may use an [.eslintrc.\*](https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-file-formats) file instead of the `package.json` file.
 
 ## Using
 
