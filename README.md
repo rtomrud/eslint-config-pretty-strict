@@ -51,7 +51,7 @@ Run ESLint via the [command line interface](https://eslint.org/docs/user-guide/c
 ./node_modules/.bin/eslint . --fix
 ```
 
-Usually, you want to run ESLint from a `"lint"` [npm script](https://docs.npmjs.com/cli/v7/using-npm/scripts), both locally and in your [CI server](https://martinfowler.com/articles/continuousIntegration.html).
+Usually, you want to run ESLint from a `"lint"` [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts), both locally and in your [CI server](https://martinfowler.com/articles/continuousIntegration.html).
 
 You may want to install an [ESLint plugin](https://eslint.org/docs/user-guide/integrations#editors) for your text editor, so that you can see and fix style problems directly in your editor. You may also want to use a [Prettier plugin](https://prettier.io/docs/en/editors.html) to automatically format on file save or with a keyboard shortcut.
 
