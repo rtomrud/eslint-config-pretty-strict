@@ -62,7 +62,3 @@ You may want to install an [ESLint plugin](https://eslint.org/docs/user-guide/in
 You can [configure any ESLint](https://eslint.org/docs/user-guide/configuring/) setting or [rule](https://eslint.org/docs/user-guide/configuring/rules). Also, Prettier can be [configured](https://prettier.io/docs/en/options.html) via a [configuration file](https://prettier.io/docs/en/configuration.html) or the [eslint-plugin-prettier `prettier/prettier` option](https://github.com/prettier/eslint-plugin-prettier#options).
 
 Sometimes, you may want to disable a rule only on some file or line of code by [using configuration comments](https://eslint.org/docs/user-guide/configuring/rules#using-configuration-comments-1).
-
-## License
-
-[MIT](./LICENSE)
