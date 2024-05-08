@@ -29,7 +29,7 @@
     "posttest": "npm run lint && npm run format"
   },
   "devDependencies": {
-    "eslint": "8.57.0",
+    "eslint": "9.2.0",
     "prettier": "3.2.5"
   },
   "peerDependencies": {
