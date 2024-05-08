@@ -1,8 +1,5 @@
 # eslint-config-pretty-strict
 
-[![build status](https://github.com/rtomrud/eslint-config-pretty-strict/workflows/ci/badge.svg)](https://github.com/rtomrud/eslint-config-pretty-strict/actions?query=branch%3Amaster+workflow%3Aci)
-[![npm version](https://badgen.net/npm/v/eslint-config-pretty-strict)](https://www.npmjs.com/package/eslint-config-pretty-strict)
-
 A strict [ESLint](https://eslint.org) config.
 
 > Any style guide written in English is either so brief that it’s ambiguous, or so long that no one reads it.
