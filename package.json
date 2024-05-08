@@ -27,10 +27,11 @@
     "url": "https://github.com/rtomrud/eslint-config-pretty-strict.git"
   },
   "scripts": {
+    "format": "prettier --check .",
     "lint": "eslint .",
     "pretest": "eslint-config-prettier index.js",
     "test": "jest",
-    "posttest": "npm run lint"
+    "posttest": "npm run lint && npm run format"
   },
   "devDependencies": {
     "eslint": "8.20.0",
