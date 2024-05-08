@@ -1,18 +1,16 @@
 # eslint-config-pretty-strict
 
-A strict [ESLint](https://eslint.org) config.
+A strict ESLint config.
 
 > Any style guide written in English is either so brief that it’s ambiguous, or so long that no one reads it.
 >
 > [—Bob Nystrom](http://journal.stuffwithstuff.com/2015/09/08/the-hardest-program-ive-ever-written/)
 
-This config provides reasonable ESLint rules to [prevent errors](https://eslint.org/docs/rules/#possible-errors), [enforce best practices](https://eslint.org/docs/rules/#best-practices) and [keep a consistent style](https://eslint.org/docs/rules/#stylistic-issues). Though you may [configure](#configuring) it to your needs.
+This config provides reasonable [ESLint](https://eslint.org/) rules to detect [possible problems](https://eslint.org/docs/latest/rules/#possible-problems) and [suggest](https://eslint.org/docs/latest/rules/#suggestions) best practices. Though you may [configure](#configuring) it to your needs.
 
 The rules are configured not to conflict in any way with formatters such as [Prettier](https://prettier.io/).
 
 ## Installing
-
-Install eslint-config-pretty-strict and ([eslint](https://github.com/eslint/eslint)):
 
 ```bash
 npm install --save-dev eslint-config-pretty-strict eslint
@@ -20,7 +18,7 @@ npm install --save-dev eslint-config-pretty-strict eslint
 
 ## Using
 
-Import this config in your [eslint.config.js](https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-file-formats) file:
+Import this config in your [eslint.config.js](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats) file:
 
 ```js
 // eslint.config.js
@@ -29,13 +27,13 @@ import prettyStrict from "eslint-config-pretty-strict";
 export default [...prettyStrict];
 ```
 
-Then, run ESLint via the [command line interface](https://eslint.org/docs/user-guide/command-line-interface) with:
+Then, run ESLint via the [command line interface](https://eslint.org/docs/latest/use/command-line-interface) with:
 
 ```bash
-./node_modules/.bin/eslint .
+npx eslint .
 
-# Alternatively, automatically fix most problems with the --fix option
-./node_modules/.bin/eslint . --fix
+# Alternatively, automatically fix most problems
+npx eslint . --fix
 ```
 
 Usually, you want to run ESLint from a `"lint"` [npm script](https://docs.npmjs.com/cli/v10/using-npm/scripts), both locally and in your CI server.
@@ -46,6 +44,6 @@ You may want to install an [ESLint plugin](https://eslint.org/docs/user-guide/in
 
 > What if I don't agree with some rule?
 
-You can [configure any ESLint](https://eslint.org/docs/user-guide/configuring/) setting or [rule](https://eslint.org/docs/user-guide/configuring/rules).
+You can [configure ESLint](https://eslint.org/docs/latest/use/configure/) settings and [rules](https://eslint.org/docs/latest/use/configure/rules).
 
-Sometimes, you may want to disable a rule only on some file or line of code by [using configuration comments](https://eslint.org/docs/user-guide/configuring/rules#using-configuration-comments-1).
+Sometimes, you may want to disable a rule only on some file or line of code by [using configuration comments](https://eslint.org/docs/latest/use/configure/rules#using-configuration-comments-1).
