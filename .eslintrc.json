@@ -5,16 +5,6 @@
   "extends": [
     "./index.js"
   ],
-  "overrides": [
-    {
-      "extends": ["plugin:jest/recommended"],
-      "files": [
-        "**/__tests__/**/*.[jt]s?(x)",
-        "**/?(*.)+(spec|test).[jt]s?(x)"
-      ],
-      "plugins": ["jest"]
-    }
-  ],
   "parserOptions": {
     "ecmaVersion": 2020
   },
