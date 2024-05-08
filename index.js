@@ -96,57 +96,6 @@ export default [
       "no-prototype-builtins": "error",
       "no-redeclare": "error",
       "no-regex-spaces": "error",
-      "no-restricted-globals": [
-        "error",
-        { name: "isNaN", message: "Use 'Number.isNaN' instead." },
-        { name: "isFinite", message: "Use 'Number.isFinite' instead." },
-      ],
-      "no-restricted-properties": [
-        "error",
-        {
-          object: "global",
-          property: "isNaN",
-          message: "Use 'Number.isNaN' instead.",
-        },
-        {
-          object: "window",
-          property: "isNaN",
-          message: "Use 'Number.isNaN' instead.",
-        },
-        {
-          object: "self",
-          property: "isNaN",
-          message: "Use 'Number.isNaN' instead.",
-        },
-        {
-          object: "global",
-          property: "isFinite",
-          message: "Use 'Number.isFinite' instead.",
-        },
-        {
-          object: "window",
-          property: "isFinite",
-          message: "Use 'Number.isFinite' instead.",
-        },
-        {
-          object: "self",
-          property: "isFinite",
-          message: "Use 'Number.isFinite' instead.",
-        },
-      ],
-      "no-restricted-syntax": [
-        "error",
-        {
-          selector: "BinaryExpression[operator=instanceof][right.name=Array]",
-          message:
-            "'instanceof' is restricted from being used. Use 'Array.isArray' instead.",
-        },
-        {
-          selector: "BinaryExpression[operator=instanceof][right.name!=Array]",
-          message:
-            "'instanceof' is restricted from being used. Use 'Object.prototype.isPrototypeOf' instead.",
-        },
-      ],
       "no-return-assign": ["error", "always"],
       "no-script-url": "error",
       "no-self-assign": "error",
