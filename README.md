@@ -21,22 +21,18 @@ Install eslint-config-pretty-strict and ([eslint](https://github.com/eslint/esli
 npm install --save-dev eslint-config-pretty-strict eslint
 ```
 
-Then, in your [.eslintrc](https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-file-formats) file, extend this config:
-
-```json
-{
-  "extends": ["eslint-config-pretty-strict"],
-  "parserOptions": {
-    "ecmaVersion": 2020
-  }
-}
-```
-
-_Note that you should also set the [`ecmaVersion` option](https://eslint.org/docs/user-guide/configuring/language-options#specifying-parser-options) according to the ECMAScript syntax you use, so that ESLint doesn't output a parsing error._
-
 ## Using
 
-Run ESLint via the [command line interface](https://eslint.org/docs/user-guide/command-line-interface) with:
+Import this config in your [eslint.config.js](https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-file-formats) file:
+
+```js
+// eslint.config.js
+import prettyStrict from "eslint-config-pretty-strict";
+
+export default [...prettyStrict];
+```
+
+Then, run ESLint via the [command line interface](https://eslint.org/docs/user-guide/command-line-interface) with:
 
 ```bash
 ./node_modules/.bin/eslint .
@@ -45,7 +41,7 @@ Run ESLint via the [command line interface](https://eslint.org/docs/user-guide/c
 ./node_modules/.bin/eslint . --fix
 ```
 
-Usually, you want to run ESLint from a `"lint"` [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts), both locally and in your CI server.
+Usually, you want to run ESLint from a `"lint"` [npm script](https://docs.npmjs.com/cli/v10/using-npm/scripts), both locally and in your CI server.
 
 You may want to install an [ESLint plugin](https://eslint.org/docs/user-guide/integrations#editors) for your text editor, so that you can see and fix style problems directly in your editor.
 
