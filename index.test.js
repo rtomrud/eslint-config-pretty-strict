@@ -3,15 +3,10 @@
 const assert = require("node:assert");
 const test = require("node:test");
 const { ESLint } = require("eslint");
-const { plugins, rules } = require("./index.js");
+const { rules } = require("./index.js");
 
 test("eslint-config-pretty-strict with eslint", () => {
   assert.doesNotThrow(() => new ESLint({ overrideConfigFile: "./index.js" }));
-});
-
-test("eslint-config-pretty-strict with eslint-plugin-prettier", () => {
-  assert.deepEqual(plugins, ["prettier"]);
-  assert.equal(rules["prettier/prettier"], "error");
 });
 
 test("eslint-config-pretty-strict with prettier's --print-width option", () => {

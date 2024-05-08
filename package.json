@@ -1,15 +1,12 @@
 {
   "name": "eslint-config-pretty-strict",
   "version": "8.1.2",
-  "description": "A strict ESLint config with Prettier as a code formatter",
+  "description": "A strict ESLint config",
   "keywords": [
     "config",
     "eslint",
-    "format",
     "hint",
     "lint",
-    "prettier",
-    "pretty",
     "style"
   ],
   "homepage": "https://github.com/rtomrud/eslint-config-pretty-strict#readme",
@@ -29,19 +26,14 @@
   "scripts": {
     "format": "prettier --check .",
     "lint": "eslint .",
-    "pretest": "eslint-config-prettier index.js",
     "test": "node --test --experimental-test-coverage",
     "posttest": "npm run lint && npm run format"
   },
   "devDependencies": {
     "eslint": "8.20.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.7.1"
   },
   "peerDependencies": {
-    "eslint": ">=7.15.0",
-    "eslint-plugin-prettier": ">=3.0.0",
-    "prettier": ">=1.13.0"
+    "eslint": ">=7.15.0"
   }
 }

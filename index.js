@@ -1,11 +1,7 @@
 "use strict";
 
 module.exports = {
-  plugins: ["prettier"],
-
-  // MUST NOT use rules that conflict or overlap with Prettier
   rules: {
-    "prettier/prettier": "error",
     "for-direction": "error",
     "getter-return": ["error", { allowImplicit: true }],
     "no-async-promise-executor": "error",
