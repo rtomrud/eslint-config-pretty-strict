@@ -4,10 +4,7 @@ export default [
   js.configs.recommended,
   {
     rules: {
-      "accessor-pairs": [
-        "error",
-        { setWithoutGet: true, enforceForClassMembers: true },
-      ],
+      "accessor-pairs": "error",
       "array-callback-return": ["error", { allowImplicit: true }],
       "block-scoped-var": "error",
       "class-methods-use-this": "error",
@@ -72,7 +69,7 @@ export default [
       "no-unused-expressions": "error",
       "no-use-before-define": "error",
       "no-useless-call": "error",
-      "no-useless-computed-key": ["error", { enforceForClassMembers: true }],
+      "no-useless-computed-key": "error",
       "no-useless-concat": "error",
       "no-useless-constructor": "error",
       "no-useless-rename": "error",
