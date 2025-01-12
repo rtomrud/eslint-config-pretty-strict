@@ -6,9 +6,7 @@ A strict ESLint config.
 >
 > [—Bob Nystrom](http://journal.stuffwithstuff.com/2015/09/08/the-hardest-program-ive-ever-written/)
 
-This config provides reasonable [ESLint](https://eslint.org/) rules to detect [possible problems](https://eslint.org/docs/latest/rules/#possible-problems) and [suggest](https://eslint.org/docs/latest/rules/#suggestions) best practices. Though you may [configure](#configuring) it to your needs.
-
-The rules are configured not to conflict in any way with formatters such as [Prettier](https://prettier.io/).
+This config provides reasonable [ESLint](https://eslint.org/) rules to detect [possible problems](https://eslint.org/docs/latest/rules/#possible-problems) and [suggest](https://eslint.org/docs/latest/rules/#suggestions) best practices. It includes all the [recommended](https://github.com/eslint/eslint/blob/main/packages/js/src/configs/eslint-recommended.js) rules from [@eslint/js](https://www.npmjs.com/package/@eslint/js) and more.
 
 ## Installing
 
@@ -36,7 +34,7 @@ npx eslint .
 npx eslint . --fix
 ```
 
-Usually, you want to run ESLint from a `"lint"` [npm script](https://docs.npmjs.com/cli/v10/using-npm/scripts), both locally and in your CI server.
+Usually, you want to run ESLint from a `"lint"` [npm script](https://docs.npmjs.com/cli/v10/using-npm/scripts), both locally and in CI.
 
 You may want to install an [ESLint plugin](https://eslint.org/docs/user-guide/integrations#editors) for your text editor, so that you can see and fix style problems directly in your editor.
 
