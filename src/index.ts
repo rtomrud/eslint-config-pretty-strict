@@ -1,6 +1,7 @@
 import js from "@eslint/js";
+import type { Linter } from "eslint";
 
-export default [
+const config: Linter.Config[] = [
   js.configs.recommended,
   {
     rules: {
@@ -28,10 +29,7 @@ export default [
       "no-continue": "error",
       "no-duplicate-imports": ["error", { includeExports: true }],
       "no-else-return": ["error", { allowElseIf: false }],
-      "no-empty-function": [
-        "error",
-        { allow: ["functions", "arrowFunctions", "methods"] },
-      ],
+      "no-empty-function": ["error", { allow: ["functions", "arrowFunctions", "methods"] }],
       "no-eval": "error",
       "no-extend-native": "error",
       "no-extra-bind": "error",
@@ -98,3 +96,5 @@ export default [
     },
   },
 ];
+
+export default config;
